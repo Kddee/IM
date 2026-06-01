@@ -148,6 +148,13 @@ const About = () => {
                 color: "accent"
               },
               {
+                name: "Dr. Ratna Raja Kumar Jambi",
+                role: "Director",
+                image: ratnaImg,
+                bio: "Dr. Ratna Raja Kumar Jambi brings a wealth of multidisciplinary expertise to InnovoraMind's board, driving strategic initiatives that translate cutting-edge research into real-world technological impact across global markets.",
+                color: "secondary"
+              },
+              {
                 name: "Dr. Joe Perez",
                 role: "Strategy Director",
                 image: joeImg,
@@ -181,13 +188,6 @@ const About = () => {
                 image: tianshengImg,
                 bio: "Dr. Tiansheng Yang is an esteemed Faculty Member at the University of South Wales, UK. He specializes in digital transformation and research leadership for educational innovation.",
                 color: "secondary"
-              },
-              {
-                name: "Dr. Ratna Raja Kumar Jambi",
-                role: "Director",
-                image: ratnaImg,
-                bio: "Dr. Ratna Raja Kumar Jambi brings a wealth of multidisciplinary expertise to InnovoraMind's board, driving strategic initiatives that translate cutting-edge research into real-world technological impact across global markets.",
-                color: "accent"
               }
             ].map((member, idx) => (
               <motion.div
@@ -217,7 +217,7 @@ const About = () => {
 
                 <div className="space-y-2 w-full">
                   <h3 className="font-display text-xl sm:text-2xl font-bold text-foreground group-hover:text-secondary transition-colors">{member.name}</h3>
-                  <div className={`inline-block px-4 py-1 rounded-full ${member.color === 'secondary' ? 'bg-secondary/10 text-secondary' : 'bg-accent/10 text-accent'} font-bold text-[11px] tracking-widest uppercase`}>
+                  <div className="inline-block px-4 py-1 rounded-full bg-secondary/10 text-secondary font-bold text-[11px] tracking-widest uppercase">
                     {member.role}
                   </div>
                   <div className="h-px w-12 bg-gradient-to-r from-transparent via-border to-transparent mx-auto mt-2" />
@@ -279,12 +279,37 @@ const About = () => {
               </div>
             </motion.div>
 
+            {/* Dr. Ratna Raja Kumar Jambi Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-secondary/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  The most meaningful advances in technology are those that are purposefully designed to uplift communities and economies. At InnovoraMind, we are committed to turning that principle into measurable, global impact.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md shrink-0">
+                  <img src={ratnaImg} alt="Dr. Ratna Raja Kumar Jambi" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Dr. Ratna Raja Kumar Jambi</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Director</p>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Dr. Joe Perez Quote */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
             >
               <div>
@@ -309,7 +334,7 @@ const About = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
               className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
             >
               <div>
@@ -334,7 +359,7 @@ const About = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
             >
               <div>
@@ -359,7 +384,7 @@ const About = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
               className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
             >
               <div>
@@ -384,7 +409,7 @@ const About = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
               className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
             >
               <div>
@@ -400,31 +425,6 @@ const About = () => {
                 <div>
                   <p className="font-bold text-foreground text-sm">Dr. Tiansheng Yang</p>
                   <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Advisory Board Member</p>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Dr. Ratna Raja Kumar Jambi Quote */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
-            >
-              <div>
-                <p className="text-4xl text-secondary/20 font-serif leading-none select-none mb-4">&#8220;</p>
-                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
-                  The most meaningful advances in technology are those that are purposefully designed to uplift communities and economies. At InnovoraMind, we are committed to turning that principle into measurable, global impact.
-                </p>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md shrink-0">
-                  <img src={ratnaImg} alt="Dr. Ratna Raja Kumar Jambi" className="w-full h-full object-cover" />
-                </div>
-                <div>
-                  <p className="font-bold text-foreground text-sm">Dr. Ratna Raja Kumar Jambi</p>
-                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Director</p>
                 </div>
               </div>
             </motion.div>
