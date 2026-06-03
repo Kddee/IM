@@ -132,7 +132,7 @@ const Nexus2026 = () => {
             <div className="flex flex-wrap gap-4 justify-center">
               <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
                 <Calendar className="w-5 h-5 text-secondary mr-3" />
-                <span className="text-white font-medium">June 7, 2026</span>
+                <span className="text-white font-medium">June 27, 2026</span>
               </div>
               <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
                 <Video className="w-5 h-5 text-primary mr-3" />
@@ -303,7 +303,7 @@ const Nexus2026 = () => {
                     <Calendar className="w-4 h-4 mr-2 text-primary" />
                     Deadline
                   </div>
-                  <p className="text-xs text-muted-foreground">Registration closes on June 6, 2026.</p>
+                  <p className="text-xs text-muted-foreground">Registration closes on June 26, 2026.</p>
                 </div>
               </motion.div>
             </div>

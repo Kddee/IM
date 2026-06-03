@@ -22,7 +22,7 @@ const conferences: Conference[] = [
     title: "Nexus 2026",
     shortDesc: "A Hackathon focusing on exciting projects on the combination of various domains like AI, Data Science, Cloud, Cybersecurity, and Machine Learning.",
     tag: "Hackathon",
-    date: "June 7, 2026",
+    date: "June 27, 2026",
     location: "Online",
     mode: "Virtual",
     icon: Code
