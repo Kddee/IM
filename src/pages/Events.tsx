@@ -22,7 +22,7 @@ const conferences: Conference[] = [
     title: "Nexus 2026",
     shortDesc: "A Hackathon focusing on exciting projects on the combination of various domains like AI, Data Science, Cloud, Cybersecurity, and Machine Learning.",
     tag: "Hackathon",
-    date: "June 27, 2026",
+    date: "June 28, 2026 (Sunday)",
     location: "Online",
     mode: "Virtual",
     icon: Code
@@ -147,7 +147,7 @@ const Events = () => {
                         href={conf.registrationLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center w-full rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 transition-colors"
+                        className="inline-flex items-center justify-center w-full rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 transition-all"
                       >
                         Register Now
                         <ArrowRight className="ml-2 w-4 h-4" />
@@ -155,7 +155,7 @@ const Events = () => {
                     ) : (
                       <Link
                         to={`/events/${conf.id}`}
-                        className="inline-flex items-center justify-center w-full rounded-xl bg-secondary px-4 py-2.5 text-sm font-semibold text-secondary-foreground shadow-sm hover:bg-secondary/90 transition-colors"
+                        className="inline-flex items-center justify-center w-full rounded-xl bg-secondary px-4 py-2.5 text-sm font-semibold text-secondary-foreground shadow-sm hover:bg-secondary/90 transition-all"
                       >
                         View Details
                         <ArrowRight className="ml-2 w-4 h-4" />
