@@ -132,7 +132,7 @@ const Nexus2026 = () => {
             <div className="flex flex-wrap gap-4 justify-center">
               <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
                 <Calendar className="w-5 h-5 text-secondary mr-3" />
-                <span className="text-white font-medium">June 27, 2026</span>
+                <span className="text-white font-medium">June 28, 2026 (Sunday)</span>
               </div>
               <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
                 <Video className="w-5 h-5 text-primary mr-3" />
@@ -397,7 +397,7 @@ const Nexus2026 = () => {
                 { title: "Global Research Excellence Award", desc: "Awarded to the team showcasing the most profound research-driven project integrating multiple cutting-edge domains." },
                 { title: "Innovation Leadership Award", desc: "Recognizes the solution with the highest potential for commercial scalability and industry impact." },
                 { title: "Young Researcher Award", desc: "A special prize dedicated to outstanding students and early-career professionals exhibiting exceptional talent." },
-                { title: "People’s Choice Award", desc: "Selected entirely through live audience voting during the final demonstration and pitch session." }
+                { title: "People's Choice Award", desc: "Selected entirely through live audience voting during the final demonstration and pitch session." }
               ].map((award, index) => (
                 <div key={index} className="bg-gradient-to-br from-background to-muted border border-border/50 p-6 rounded-2xl hover:border-yellow-500/30 hover:shadow-lg hover:-translate-y-1 transition-all">
                   <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center mb-4">
