@@ -4,6 +4,7 @@ import { Target, Eye } from 'lucide-react';
 import certificateImg from '@/assets/certificate.png';
 
 import walidaImg from '@/assets/advisors/advisor-1.png';
+import zohaImg from '@/assets/advisors/ZR.jpeg';
 import joeImg from '@/assets/advisors/advisor-2.png';
 import ezinneImg from '@/assets/advisors/advisor-6.jpeg';
 import firasImg from '@/assets/advisors/Dr firas.jpeg';
@@ -148,6 +149,13 @@ const About = () => {
                 color: "accent"
               },
               {
+                name: "Dr. Zoha Rahman",
+                role: "Board Member",
+                image: zohaImg,
+                bio: "Dr. Zoha Rahman is Founder & Country Director at the Centre for Big Data & Machine Learning in the United States. She brings unparalleled expertise in AI strategy and data-driven leadership to InnovoraMind's board, shaping transformative digital solutions on a global scale.",
+                color: "secondary"
+              },
+              {
                 name: "Dr. Ratna Raja Kumar Jambi",
                 role: "Director",
                 image: ratnaImg,
@@ -275,6 +283,31 @@ const About = () => {
                 <div>
                   <p className="font-bold text-foreground text-sm">Dr. Walida Ounruean</p>
                   <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Director</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Dr. Zoha Rahman Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.05 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-secondary/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  Data is not merely a resource — it is the language through which the future speaks. By harnessing the power of big data and machine learning, we can architect solutions that are not only intelligent, but genuinely transformative for businesses and communities alike.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md shrink-0">
+                  <img src={zohaImg} alt="Dr. Zoha Rahman" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Dr. Zoha Rahman</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Board Member</p>
                 </div>
               </div>
             </motion.div>
