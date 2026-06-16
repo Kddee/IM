@@ -4,6 +4,15 @@ import {
   Calendar, MapPin, Video, Code, Shield, Cloud, Component, CheckCircle2, Trophy, Crosshair, ClipboardList, Target, Award, ExternalLink, Users, User
 } from 'lucide-react';
 
+import walidaImg from '@/assets/advisors/advisor-1.png';
+import zohaImg from '@/assets/advisors/ZR.jpeg';
+import joeImg from '@/assets/advisors/advisor-2.png';
+import ezinneImg from '@/assets/advisors/advisor-6.jpeg';
+import firasImg from '@/assets/advisors/Dr firas.jpeg';
+import tianshengImg from '@/assets/advisors/tiansheng.png';
+import katarzynaImg from '@/assets/advisors/katarzyna.png';
+import ratnaImg from '@/assets/advisors/ratna-raja-kumar.jpg';
+
 const expertsData = [
   {
     "name": "Andreza Malena Guedes da Costa Silva",
@@ -93,6 +102,105 @@ const judgesData = [
     designation: "PhD Researcher in Mathematics",
     country: "Romania",
     image: "/images/judges/cristina.jpeg"
+  },
+  {
+    name: "Trupti Raikar",
+    designation: "SAP Technology Architect",
+    country: "USA",
+    image: "https://static.wixstatic.com/media/30814e_ca6075e6cef84116937f732636db6914~mv2.jpeg"
+  },
+  {
+    name: "Yesha Patel",
+    designation: "Senior Solution Architect",
+    country: "United States",
+    image: "https://static.wixstatic.com/media/30814e_6354e00a70db405c823ee8721026e4f1~mv2.avif"
+  },
+  {
+    name: "Manuja Bandal",
+    designation: "Software Engineer & Innovator",
+    country: "USA",
+    image: "https://static.wixstatic.com/media/30814e_871155ce5f72470c95772f064886f06e~mv2.jpeg"
+  },
+  {
+    name: "Ezinne Esther Arisa",
+    designation: "Candy Rainbow Creations",
+    country: "South Africa",
+    image: "https://static.wixstatic.com/media/502b14_3adc2682f9064817b4728eca9cd4a0b1~mv2.jpeg"
+  },
+  {
+    name: "Anshuman Khandelwal",
+    designation: "Cloud Computing Architect",
+    country: "USA",
+    image: "https://static.wixstatic.com/media/30814e_2cb5972bc61d457eb6a1c8153a563e05~mv2.jpeg"
+  }
+];
+
+const directorsData = [
+  {
+    name: "Dr. Walida Ounruean",
+    organisation: "Innovora Mind LLC",
+    designation: "Director & Senior Research Fellow",
+    country: "Thailand",
+    image: walidaImg
+  },
+  {
+    name: "Dr. Zoha Rahman",
+    organisation: "Centre for Big Data & Machine Learning",
+    designation: "Board Member",
+    country: "USA",
+    image: zohaImg
+  },
+  {
+    name: "Dr. Ratna Raja Kumar Jambi",
+    organisation: "Innovora Mind LLC",
+    designation: "Director",
+    country: "USA",
+    image: ratnaImg
+  },
+  {
+    name: "Dr. Joe Perez",
+    organisation: "NC Department of Health & Human Services",
+    designation: "Head of Data Strategy",
+    country: "Raleigh, NC, USA",
+    image: joeImg
+  },
+  {
+    name: "Ezinne Esther Arisa",
+    organisation: "Global Centre for Responsible Technology",
+    designation: "Independent Director",
+    country: "South Africa",
+    image: ezinneImg
+  },
+  {
+    name: "Dr. Katarzyna Antosz",
+    organisation: "European Academy of Engineering Sciences",
+    designation: "Board Member & Research Strategist",
+    country: "Poland",
+    image: katarzynaImg
+  },
+  {
+    name: "Dr. Firas Zeidan",
+    organisation: "Institute for Technology & Human Progress",
+    designation: "Advisory Board Member",
+    country: "Lebanon",
+    image: firasImg
+  },
+  {
+    name: "Dr. Tiansheng Yang",
+    organisation: "University of South Wales",
+    designation: "Faculty Member & Research Director",
+    country: "United Kingdom",
+    image: tianshengImg
+  }
+];
+
+const hostsData = [
+  {
+    name: "Dr. Aida Mehrad",
+    organisation: "C3S Business School",
+    designation: "Event Host",
+    country: "Spain",
+    image: "https://static.wixstatic.com/media/502b14_2f32591e100346daa035a4aaf27ef7d7~mv2.jpeg"
   }
 ];
 
@@ -308,6 +416,84 @@ const Nexus2026 = () => {
               </motion.div>
             </div>
           </div>
+
+          {/* Board of Directors Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center space-x-4 mb-10">
+              <div className="w-12 h-1 bg-blue-500 rounded-full"></div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Board of Directors</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {directorsData.map((director, index) => (
+                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-blue-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
+                  <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
+                    {director.image ? (
+                      <img src={director.image} alt={director.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <User className="w-8 h-8 text-muted-foreground/50" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 text-foreground">{director.name}</h3>
+                  {director.designation && (
+                    <p className="text-sm font-medium text-blue-500 mb-1">{director.designation}</p>
+                  )}
+                  {director.organisation && (
+                    <p className="text-sm text-muted-foreground mb-3 leading-relaxed flex-grow">{director.organisation}</p>
+                  )}
+                  {director.country && (
+                    <div className="flex items-center justify-center text-sm font-medium text-blue-500/80 mt-auto w-full pt-3 border-t border-border/50">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {director.country}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Event Host Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center space-x-4 mb-10">
+              <div className="w-12 h-1 bg-teal-500 rounded-full"></div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Event Host</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {hostsData.map((host, index) => (
+                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-teal-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
+                  <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
+                    {host.image ? (
+                      <img src={host.image} alt={host.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <User className="w-8 h-8 text-muted-foreground/50" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 text-foreground">{host.name}</h3>
+                  {host.designation && (
+                    <p className="text-sm font-medium text-teal-500 mb-1">{host.designation}</p>
+                  )}
+                  {host.organisation && (
+                    <p className="text-sm text-muted-foreground mb-3 leading-relaxed flex-grow">{host.organisation}</p>
+                  )}
+                  {host.country && (
+                    <div className="flex items-center justify-center text-sm font-medium text-teal-500/80 mt-auto w-full pt-3 border-t border-border/50">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {host.country}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
 
           {/* Judges Section */}
           <motion.div
