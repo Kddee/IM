@@ -230,7 +230,7 @@ const Nexus2026 = () => {
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-              Nexus <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">2026</span>
+              Nexus Industrial Summit <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">2026</span>
             </h1>
             <p className="text-xl sm:text-2xl text-slate-300 font-medium mb-10 leading-relaxed">
               Join the ultimate convergence of AI, Data Science, Cloud, Cybersecurity, and Machine Learning.
@@ -270,7 +270,7 @@ const Nexus2026 = () => {
 
                 <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground mt-8 text-justify">
                   <p className="text-xl leading-relaxed mb-6 font-medium text-foreground/80">
-                    Nexus 2026 is a premier virtual hackathon designed to push the limits of technology across various high-impact domains.
+                    Nexus Industrial Summit 2026 is a premier virtual hackathon designed to push the limits of technology across various high-impact domains.
                   </p>
                   <p>
                     We are bringing together the brightest minds, from enthusiastic students to seasoned professionals, to develop innovative solutions that bridge Artificial Intelligence, Data Science, Cloud Computing, Cybersecurity, and Machine Learning. Participants will have the opportunity to collaborate, mentored by industry experts, and showcase their groundbreaking projects to a global audience.
@@ -374,7 +374,7 @@ const Nexus2026 = () => {
                 </div>
 
                 <p className="text-sm text-muted-foreground mb-6">
-                  Ready to innovate? Join Nexus 2026. Choose your role below to complete your registration.
+                  Ready to innovate? Join Nexus Industrial Summit 2026. Choose your role below to complete your registration.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -502,7 +502,7 @@ const Nexus2026 = () => {
           >
             <div className="flex items-center space-x-4 mb-10">
               <div className="w-12 h-1 bg-pink-500 rounded-full"></div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Panel of Judges</h2>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Panel Members</h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

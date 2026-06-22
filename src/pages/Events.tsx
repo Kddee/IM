@@ -19,7 +19,7 @@ interface Conference {
 const conferences: Conference[] = [
   {
     id: "hackathon-2026",
-    title: "Nexus 2026",
+    title: "Nexus Industrial Summit 2026",
     shortDesc: "A Hackathon focusing on exciting projects on the combination of various domains like AI, Data Science, Cloud, Cybersecurity, and Machine Learning.",
     tag: "Hackathon",
     date: "June 28, 2026 (Sunday)",
@@ -27,6 +27,7 @@ const conferences: Conference[] = [
     mode: "Virtual",
     icon: Code
   },
+  /*
   {
     id: "fireside-chat-agi-ethics",
     title: "The Ethics of AGI",
@@ -47,6 +48,7 @@ const conferences: Conference[] = [
     mode: "Virtual",
     icon: Layers
   }
+  */
 ];
 
 const Events = () => {
