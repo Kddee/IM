@@ -270,10 +270,28 @@ const Nexus2026 = () => {
 
                 <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground mt-8 text-justify">
                   <p className="text-xl leading-relaxed mb-6 font-medium text-foreground/80">
-                    Nexus Industrial Summit 2026 is a premier virtual hackathon designed to push the limits of technology across various high-impact domains.
+                    Nexus Industrial Summit 2026 is a premier virtual hackathon designed to push the limits of technology across various high-impact domains. As the inaugural edition of this global summit, we are setting the stage for a new tradition of excellence.
                   </p>
                   <p>
                     We are bringing together the brightest minds, from enthusiastic students to seasoned professionals, to develop innovative solutions that bridge Artificial Intelligence, Data Science, Cloud Computing, Cybersecurity, and Machine Learning. Participants will have the opportunity to collaborate, mentored by industry experts, and showcase their groundbreaking projects to a global audience.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* About InnovoraMind Section */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="mb-16"
+              >
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-1 bg-purple-500 rounded-full"></div>
+                  <h2 className="font-display text-3xl font-bold text-foreground">About InnovoraMind</h2>
+                </div>
+                <div className="bg-card border border-border p-8 rounded-3xl mt-8">
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    InnovoraMind LLC, a leader in Enterprise IT Solutions, AI, and Digital Transformation, is proud to host the Nexus Industrial Summit. Drawing upon our extensive background in leveraging cutting-edge technologies for enterprise success, we aim to cultivate a community of innovators who can address the complex challenges of tomorrow's digital landscape.
                   </p>
                 </div>
               </motion.div>
@@ -354,6 +372,13 @@ const Nexus2026 = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="mt-8 bg-card border border-border p-6 rounded-2xl">
+                  <h4 className="font-bold text-lg mb-2 text-foreground">Scoring & Weightage</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Projects will be scored out of 100 points: Innovation (30%), Technical Complexity (30%), Real-world Applicability (20%), and Presentation & UI (20%). A minimum score of 70 is required to qualify for top-tier awards.
+                  </p>
+                </div>
               </motion.div>
 
             </div>
@@ -411,6 +436,16 @@ const Nexus2026 = () => {
                     Deadline
                   </div>
                   <p className="text-xs text-muted-foreground">Registration closes on June 26, 2026.</p>
+                </div>
+
+                <div className="bg-background/50 rounded-xl p-4 border border-border/50 mt-4">
+                  <div className="flex items-center text-sm font-medium mb-2">
+                    <Shield className="w-4 h-4 mr-2 text-emerald-500" />
+                    IP & Submission Policy
+                  </div>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Participants retain full ownership and intellectual property rights of their project ideas and code. Submitted projects may be used or shared by InnovoraMind LLC solely for promotional and showcase purposes related to the summit.
+                  </p>
                 </div>
               </motion.div>
             </div>
@@ -592,6 +627,18 @@ const Nexus2026 = () => {
                   <p className="text-sm text-muted-foreground">{award.desc}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-8 bg-card border border-border p-6 rounded-2xl flex items-start space-x-4">
+              <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <Award className="w-6 h-6 text-green-500" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Certifications</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  All valid project submissions will be rewarded with a verified Certificate of Participation. Award winners will receive a special Certificate of Achievement highlighting their specific accolade and project domain, officially endorsed by InnovoraMind LLC and our panel of experts.
+                </p>
+              </div>
             </div>
           </motion.div>
 
