@@ -14,6 +14,7 @@ import emeraldImg from '@/assets/image copy 6.png';
 import drSaleemImg from '@/assets/image copy 3.png';
 import fatimahImg from '@/assets/image copy 4.png';
 import hassanImg from '@/assets/image copy 5.png';
+import truptiImg from '@/assets/image copy 7.png';
 
 const expertsData = [
   {
@@ -109,7 +110,7 @@ const judgesData = [
     name: "Trupti Raikar",
     designation: "SAP Technology Architect",
     country: "USA",
-    image: "https://static.wixstatic.com/media/30814e_ca6075e6cef84116937f732636db6914~mv2.jpeg"
+    image: truptiImg
   },
   {
     name: "Ezinne Esther Arisa",
@@ -509,7 +510,7 @@ const Nexus2026 = () => {
                 <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-pink-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
                   <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
                     {judge.image ? (
-                      <img src={judge.image} alt={judge.name} className="w-full h-full object-cover" />
+                      <img src={judge.image} alt={judge.name} className="w-full h-full object-cover object-top" />
                     ) : (
                       <User className="w-8 h-8 text-muted-foreground/50" />
                     )}
