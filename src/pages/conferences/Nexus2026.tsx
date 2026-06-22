@@ -211,7 +211,7 @@ const Nexus2026 = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=2070"
-            alt="Hackathon Background"
+            alt="Industrial Summit Background"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-950/85 bg-gradient-to-t from-slate-950 via-slate-950/70 flex items-center"></div>
@@ -226,7 +226,7 @@ const Nexus2026 = () => {
           >
             <div className="inline-flex items-center rounded-full border border-secondary/50 bg-secondary/20 px-4 py-1.5 text-sm font-semibold text-secondary backdrop-blur-md mb-6">
               <Code className="w-4 h-4 mr-2" />
-              Global Virtual Hackathon
+              Global Virtual Summit
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
@@ -265,15 +265,15 @@ const Nexus2026 = () => {
               >
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-12 h-1 bg-secondary rounded-full"></div>
-                  <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">About the Hackathon</h2>
+                  <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">About the Summit</h2>
                 </div>
 
                 <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground mt-8 text-justify">
                   <p className="text-xl leading-relaxed mb-6 font-medium text-foreground/80">
-                    Nexus Industrial Summit 2026 is an internationally judged competitive innovation event that recognizes excellence in AI, Data Science, Cloud Computing, Cybersecurity, and Machine Learning through a structured evaluation process conducted by a global panel of experts. It is an international competitive hackathon open to participants worldwide. As the inaugural edition of this global summit, we are setting the stage for a new tradition of excellence.
+                    Nexus Industrial Summit 2026 is an international virtual summit that brings together researchers, industry professionals, technology leaders, entrepreneurs, educators, and students from around the world to discuss advancements in Artificial Intelligence, Data Science, Cloud Computing, Cybersecurity, Machine Learning, and Digital Transformation.
                   </p>
                   <p>
-                    We are bringing together the brightest minds, from enthusiastic students to seasoned professionals, to develop innovative solutions that bridge Artificial Intelligence, Data Science, Cloud Computing, Cybersecurity, and Machine Learning. Participants will have the opportunity to collaborate, mentored by industry experts, and showcase their groundbreaking projects to a global audience.
+                    We are bringing together the brightest minds to focus on global collaboration, knowledge sharing, research dissemination, industry-academia partnerships, innovation and emerging technologies, and professional networking.
                   </p>
                 </div>
               </motion.div>
@@ -308,9 +308,13 @@ const Nexus2026 = () => {
                 </div>
                 <div className="bg-card border border-border p-8 rounded-3xl mt-8">
                   <Target className="w-12 h-12 text-primary mb-6" />
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    Our objective is to foster a collaborative and competitive environment that sparks innovation. By challenging participants to integrate multiple disciplines such as applying AI to cybersecurity models or scaling data science algorithms on the cloud;we aim to generate practical, forward-thinking solutions that address real-world technological challenges.
-                  </p>
+                  <ul className="text-muted-foreground text-lg leading-relaxed list-disc list-inside space-y-2">
+                    <li>Promoting innovation and digital transformation</li>
+                    <li>Encouraging interdisciplinary collaboration</li>
+                    <li>Supporting research and industry engagement</li>
+                    <li>Creating opportunities for international networking</li>
+                    <li>Facilitating discussions on real-world technological challenges</li>
+                  </ul>
                 </div>
               </motion.div>
 
@@ -327,12 +331,13 @@ const Nexus2026 = () => {
 
                 <div className="space-y-6 mt-8">
                   {[
-                    { time: "09:00 AM", title: "Opening Ceremony & Keynote", desc: "Welcome address and unveiling of problem statements." },
-                    { time: "10:00 AM", title: "Hacking Begins", desc: "Teams commence brainstorming and initial coding." },
-                    { time: "02:00 PM", title: "Mentor Check-in Round 1", desc: "Feedback sessions with domain experts." },
-                    { time: "06:00 PM", title: "Mid-way Progress Evaluation", desc: "Quick demonstrations of conceptual prototypes." },
-                    { time: "11:59 PM", title: "Final Project Submission", desc: "Code freeze and submission of presentation materials." },
-                    { time: "Next Day", title: "Judging & Closing Ceremony", desc: "Live project pitches and announcement of award winners." },
+                    { time: "09:00 AM", title: "Opening Ceremony & Welcome Address", desc: "Welcome address and summit inauguration." },
+                    { time: "10:00 AM", title: "Global Keynote Session", desc: "Insights and visions from leading industry experts." },
+                    { time: "12:00 PM", title: "Expert Panel Discussions", desc: "Interactive debates on emerging technologies." },
+                    { time: "02:00 PM", title: "Research & Innovation Presentations", desc: "Showcasing groundbreaking research and innovation." },
+                    { time: "04:00 PM", title: "Industry Case Studies & Technology Insights", desc: "Real-world applications and technological advancements." },
+                    { time: "06:00 PM", title: "International Networking Session", desc: "Global connection and collaboration opportunities." },
+                    { time: "08:00 PM", title: "Awards, Recognition & Closing Ceremony", desc: "Honoring achievements and concluding the event." },
                   ].map((item, index) => (
                     <div key={index} className="flex flex-col sm:flex-row sm:items-center bg-card p-4 rounded-2xl border border-border/50 shadow-sm hover:border-accent/50 transition-colors">
                       <div className="bg-accent/10 text-accent font-bold px-4 py-2 rounded-xl sm:w-40 text-center mb-4 sm:mb-0 sm:mr-6">
@@ -355,15 +360,16 @@ const Nexus2026 = () => {
               >
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-12 h-1 bg-emerald-500 rounded-full"></div>
-                  <h2 className="font-display text-3xl font-bold text-foreground">Evaluation Criteria</h2>
+                  <h2 className="font-display text-3xl font-bold text-foreground">Recognition Criteria</h2>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-6 mt-8">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                   {[
-                    { icon: Component, title: "Innovation", desc: "Originality of the idea and creative approach to solving the problem." },
-                    { icon: Code, title: "Technical Complexity", desc: "Depth of technical execution and proper use of multi-domain technologies." },
-                    { icon: Shield, title: "Real-world Applicability", desc: "How well the solution addresses practical, real-world industry challenges." },
-                    { icon: ClipboardList, title: "Presentation & UI", desc: "Clarity of the pitch, UI design, and user experience of the final prototype." }
+                    { icon: Component, title: "Innovation & Originality", desc: "Originality of the idea and creative approach to solving industry problems." },
+                    { icon: Target, title: "Research Contribution", desc: "Depth of research and potential to advance the field." },
+                    { icon: Shield, title: "Industry Relevance", desc: "How well the solution addresses practical, real-world industry challenges." },
+                    { icon: Crosshair, title: "Technology Impact", desc: "Potential for significant technological advancement and scalability." },
+                    { icon: ClipboardList, title: "Presentation Excellence", desc: "Clarity, professionalism, and quality of the presentation." }
                   ].map((crit, idx) => (
                     <div key={idx} className="bg-background border border-border p-6 rounded-2xl">
                       <crit.icon className="w-8 h-8 text-emerald-500 mb-4" />
@@ -374,12 +380,12 @@ const Nexus2026 = () => {
                 </div>
 
                 <div className="mt-8 bg-card border border-border p-6 rounded-2xl">
-                  <h4 className="font-bold text-lg mb-2 text-foreground">Selection & Evaluation Transparency</h4>
+                  <h4 className="font-bold text-lg mb-2 text-foreground">Selection & Recognition Transparency</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                    Projects will be evaluated by an international multidisciplinary panel of experts from academia and industry. Projects are independently scored against predefined evaluation criteria. Top projects are selected based on cumulative scores assigned by the judging panel.
+                    Presentations and research will be reviewed by an international multidisciplinary panel of experts from academia and industry. Submissions are independently evaluated against predefined recognition criteria.
                   </p>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Projects will be scored out of 100 points: Innovation (30%), Technical Complexity (30%), Real-world Applicability (20%), and Presentation & UI (20%). A minimum score of 70 is required to qualify for top-tier awards.
+                    Participants who meet the high standards of our recognition criteria will be eligible for various awards and certifications, reflecting their excellence in Knowledge Exchange, Innovation, Research and Industry Collaboration.
                   </p>
                 </div>
               </motion.div>
@@ -444,10 +450,10 @@ const Nexus2026 = () => {
                 <div className="bg-background/50 rounded-xl p-4 border border-border/50 mt-4">
                   <div className="flex items-center text-sm font-medium mb-2">
                     <Shield className="w-4 h-4 mr-2 text-emerald-500" />
-                    IP & Submission Policy
+                    IP & Presentation Policy
                   </div>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    Participants retain full ownership and intellectual property rights of their project ideas and code. Submitted projects may be used or shared by InnovoraMind LLC solely for promotional and showcase purposes related to the summit.
+                    Participants retain full ownership and intellectual property rights of their research and presentations. Submitted materials may be used or shared by InnovoraMind LLC solely for promotional and showcase purposes related to the summit.
                   </p>
                 </div>
               </motion.div>
@@ -617,9 +623,11 @@ const Nexus2026 = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: "Winner", desc: "Awarded to the team with the highest overall score, demonstrating exceptional innovation and technical execution." },
-                { title: "Runner-up", desc: "Awarded to the second highest-scoring project that showcases significant potential and strong technical merit." },
-                { title: "Best Innovation", desc: "Recognizes the solution with the most original and creative approach to solving complex industry challenges." }
+                { title: "Global Innovation Excellence Award", desc: "Recognizes outstanding innovation and visionary solutions." },
+                { title: "Industry Leadership Award", desc: "Honors excellence in demonstrating significant industry impact and leadership." },
+                { title: "Research Impact Award", desc: "Awarded for exceptional contributions to research and technological advancement." },
+                { title: "Emerging Professional Award", desc: "Celebrates promising talent and emerging leaders in the field." },
+                { title: "Outstanding Presentation Award", desc: "Recognizes the most compelling, clear, and impactful presentation." }
               ].map((award, index) => (
                 <div key={index} className="bg-gradient-to-br from-background to-muted border border-border/50 p-6 rounded-2xl hover:border-yellow-500/30 hover:shadow-lg hover:-translate-y-1 transition-all">
                   <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center mb-4">
@@ -639,11 +647,24 @@ const Nexus2026 = () => {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Certifications & Digital Credentials</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    All valid project submissions will be rewarded with a verifiable digital Certificate of Participation. Award winners will receive a special Certificate of Achievement highlighting their specific accolade and project domain, officially endorsed by InnovoraMind LLC and our panel of experts.
+                    Participants will receive:
                   </p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    A dedicated Verification Page will be available on the website to validate these credentials.
+                  <ul className="text-muted-foreground text-sm leading-relaxed list-disc list-inside mb-4 space-y-1">
+                    <li>Certificate of Participation</li>
+                    <li>Certificate of Presentation</li>
+                    <li>Certificate of Excellence (Award Recipients)</li>
+                    <li>Speaker Appreciation Certificate</li>
+                    <li>Panel Recognition Certificate</li>
+                  </ul>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-2 font-medium">
+                    All certificates include:
                   </p>
+                  <ul className="text-muted-foreground text-sm leading-relaxed list-disc list-inside space-y-1">
+                    <li>Unique Certificate ID</li>
+                    <li>QR Code Verification</li>
+                    <li>Digital Authentication</li>
+                    <li>Online Verification Portal</li>
+                  </ul>
                 </div>
               </div>
 
@@ -653,21 +674,21 @@ const Nexus2026 = () => {
                     <CheckCircle2 className="w-6 h-6 text-blue-500" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Project Publication Showcase</h3>
+                    <h3 className="text-xl font-bold mb-2">Research Publication Showcase</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      Selected top projects may be featured in an official summit proceedings or showcase page to highlight your work to a global audience.
+                      Selected top presentations may be featured in official summit proceedings or a showcase page to highlight your work to a global audience.
                     </p>
                   </div>
                 </div>
 
                 <div className="bg-card border border-border p-6 rounded-2xl flex items-start space-x-4">
                   <div className="w-12 h-12 bg-orange-500/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Trophy className="w-6 h-6 text-orange-500" />
+                    <MapPin className="w-6 h-6 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Post-Event Participation Statistics</h3>
+                    <h3 className="text-xl font-bold mb-2">International Participation</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      Certificates will reflect official participation statistics (number of countries represented, total participants, number of teams, and number of submissions) to validate the scale and competitiveness of the hackathon for your professional portfolio.
+                      Nexus Industrial Summit 2026 is an international professional and academic event that welcomes researchers, professionals, students, innovators, entrepreneurs, and technology leaders from across the globe. The summit promotes international collaboration, innovation, and knowledge exchange across emerging technology domains.
                     </p>
                   </div>
                 </div>
