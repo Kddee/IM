@@ -270,7 +270,7 @@ const Nexus2026 = () => {
 
                 <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground mt-8 text-justify">
                   <p className="text-xl leading-relaxed mb-6 font-medium text-foreground/80">
-                    Nexus Industrial Summit 2026 is a premier virtual hackathon designed to push the limits of technology across various high-impact domains. As the inaugural edition of this global summit, we are setting the stage for a new tradition of excellence.
+                    Nexus Industrial Summit 2026 is an internationally judged competitive innovation event that recognizes excellence in AI, Data Science, Cloud Computing, Cybersecurity, and Machine Learning through a structured evaluation process conducted by a global panel of experts. It is an international competitive hackathon open to participants worldwide. As the inaugural edition of this global summit, we are setting the stage for a new tradition of excellence.
                   </p>
                   <p>
                     We are bringing together the brightest minds, from enthusiastic students to seasoned professionals, to develop innovative solutions that bridge Artificial Intelligence, Data Science, Cloud Computing, Cybersecurity, and Machine Learning. Participants will have the opportunity to collaborate, mentored by industry experts, and showcase their groundbreaking projects to a global audience.
@@ -374,7 +374,10 @@ const Nexus2026 = () => {
                 </div>
 
                 <div className="mt-8 bg-card border border-border p-6 rounded-2xl">
-                  <h4 className="font-bold text-lg mb-2 text-foreground">Scoring & Weightage</h4>
+                  <h4 className="font-bold text-lg mb-2 text-foreground">Selection & Evaluation Transparency</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                    Projects will be evaluated by an international multidisciplinary panel of experts from academia and industry. Projects are independently scored against predefined evaluation criteria. Top projects are selected based on cumulative scores assigned by the judging panel.
+                  </p>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Projects will be scored out of 100 points: Innovation (30%), Technical Complexity (30%), Real-world Applicability (20%), and Presentation & UI (20%). A minimum score of 70 is required to qualify for top-tier awards.
                   </p>
@@ -612,12 +615,11 @@ const Nexus2026 = () => {
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Awards and Recognition</h2>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: "Global Research Excellence Award", desc: "Awarded to the team showcasing the most profound research-driven project integrating multiple cutting-edge domains." },
-                { title: "Innovation Leadership Award", desc: "Recognizes the solution with the highest potential for commercial scalability and industry impact." },
-                { title: "Young Researcher Award", desc: "A special prize dedicated to outstanding students and early-career professionals exhibiting exceptional talent." },
-                { title: "People's Choice Award", desc: "Selected entirely through live audience voting during the final demonstration and pitch session." }
+                { title: "Winner", desc: "Awarded to the team with the highest overall score, demonstrating exceptional innovation and technical execution." },
+                { title: "Runner-up", desc: "Awarded to the second highest-scoring project that showcases significant potential and strong technical merit." },
+                { title: "Best Innovation", desc: "Recognizes the solution with the most original and creative approach to solving complex industry challenges." }
               ].map((award, index) => (
                 <div key={index} className="bg-gradient-to-br from-background to-muted border border-border/50 p-6 rounded-2xl hover:border-yellow-500/30 hover:shadow-lg hover:-translate-y-1 transition-all">
                   <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center mb-4">
@@ -629,15 +631,46 @@ const Nexus2026 = () => {
               ))}
             </div>
 
-            <div className="mt-8 bg-card border border-border p-6 rounded-2xl flex items-start space-x-4">
-              <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center flex-shrink-0">
-                <Award className="w-6 h-6 text-green-500" />
+            <div className="grid lg:grid-cols-2 gap-6 mt-8">
+              <div className="bg-card border border-border p-6 rounded-2xl flex items-start space-x-4">
+                <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Award className="w-6 h-6 text-green-500" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Certifications & Digital Credentials</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    All valid project submissions will be rewarded with a verifiable digital Certificate of Participation. Award winners will receive a special Certificate of Achievement highlighting their specific accolade and project domain, officially endorsed by InnovoraMind LLC and our panel of experts.
+                  </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    A dedicated Verification Page will be available on the website to validate these credentials.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">Certifications</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  All valid project submissions will be rewarded with a verified Certificate of Participation. Award winners will receive a special Certificate of Achievement highlighting their specific accolade and project domain, officially endorsed by InnovoraMind LLC and our panel of experts.
-                </p>
+
+              <div className="space-y-6">
+                <div className="bg-card border border-border p-6 rounded-2xl flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="w-6 h-6 text-blue-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Project Publication Showcase</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Selected top projects may be featured in an official summit proceedings or showcase page to highlight your work to a global audience.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-card border border-border p-6 rounded-2xl flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-orange-500/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Trophy className="w-6 h-6 text-orange-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Post-Event Participation Statistics</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Certificates will reflect official participation statistics (number of countries represented, total participants, number of teams, and number of submissions) to validate the scale and competitiveness of the hackathon for your professional portfolio.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
