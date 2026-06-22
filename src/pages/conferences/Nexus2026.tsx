@@ -11,6 +11,8 @@ import firasImg from '@/assets/advisors/Dr firas.jpeg';
 import katarzynaImg from '@/assets/advisors/katarzyna.png';
 import drLongjamImg from '@/assets/image.png';
 import profOlukemiImg from '@/assets/image copy.png';
+import emeraldImg from '@/assets/image copy 2.png';
+import drSaleemImg from '@/assets/image copy 3.png';
 
 const expertsData = [
   {
@@ -127,6 +129,20 @@ const judgesData = [
     designation: "Professor",
     country: "Nigeria",
     image: profOlukemiImg
+  },
+  {
+    name: "Emerald Abena Amponsah Baffour",
+    organisation: "G-Fash Networks",
+    designation: "CEO",
+    country: "Ghana",
+    image: emeraldImg
+  },
+  {
+    name: "Dr. Saleem Abu Jaber",
+    organisation: "Achva Academic College",
+    designation: "Academic Advisor Head & Senior Lecturer",
+    country: "Israel",
+    image: drSaleemImg
   }
 ];
 
