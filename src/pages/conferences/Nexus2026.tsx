@@ -4,14 +4,11 @@ import {
   Calendar, MapPin, Video, Code, Shield, Cloud, Component, CheckCircle2, Trophy, Crosshair, ClipboardList, Target, Award, ExternalLink, Users, User
 } from 'lucide-react';
 
-import walidaImg from '@/assets/advisors/advisor-1.png';
 import zohaImg from '@/assets/advisors/ZR.jpeg';
 import joeImg from '@/assets/advisors/advisor-2.png';
 import ezinneImg from '@/assets/advisors/advisor-6.jpeg';
 import firasImg from '@/assets/advisors/Dr firas.jpeg';
-import tianshengImg from '@/assets/advisors/tiansheng.png';
 import katarzynaImg from '@/assets/advisors/katarzyna.png';
-import ratnaImg from '@/assets/advisors/ratna-raja-kumar.jpg';
 
 const expertsData = [
   {
@@ -110,52 +107,20 @@ const judgesData = [
     image: "https://static.wixstatic.com/media/30814e_ca6075e6cef84116937f732636db6914~mv2.jpeg"
   },
   {
-    name: "Yesha Patel",
-    designation: "Senior Solution Architect",
-    country: "United States",
-    image: "https://static.wixstatic.com/media/30814e_6354e00a70db405c823ee8721026e4f1~mv2.avif"
-  },
-  {
-    name: "Manuja Bandal",
-    designation: "Software Engineer & Innovator",
-    country: "USA",
-    image: "https://static.wixstatic.com/media/30814e_871155ce5f72470c95772f064886f06e~mv2.jpeg"
-  },
-  {
     name: "Ezinne Esther Arisa",
     designation: "Candy Rainbow Creations",
     country: "South Africa",
     image: "https://static.wixstatic.com/media/502b14_3adc2682f9064817b4728eca9cd4a0b1~mv2.jpeg"
-  },
-  {
-    name: "Anshuman Khandelwal",
-    designation: "Cloud Computing Architect",
-    country: "USA",
-    image: "https://static.wixstatic.com/media/30814e_2cb5972bc61d457eb6a1c8153a563e05~mv2.jpeg"
   }
 ];
 
 const directorsData = [
-  {
-    name: "Dr. Walida Ounruean",
-    organisation: "Innovora Mind LLC",
-    designation: "Director & Senior Research Fellow",
-    country: "Thailand",
-    image: walidaImg
-  },
   {
     name: "Dr. Zoha Rahman",
     organisation: "Centre for Big Data & Machine Learning",
     designation: "Board Member",
     country: "USA",
     image: zohaImg
-  },
-  {
-    name: "Dr. Ratna Raja Kumar Jambi",
-    organisation: "Innovora Mind LLC",
-    designation: "Director",
-    country: "USA",
-    image: ratnaImg
   },
   {
     name: "Dr. Joe Perez",
@@ -184,13 +149,6 @@ const directorsData = [
     designation: "Advisory Board Member",
     country: "Lebanon",
     image: firasImg
-  },
-  {
-    name: "Dr. Tiansheng Yang",
-    organisation: "University of South Wales",
-    designation: "Faculty Member & Research Director",
-    country: "United Kingdom",
-    image: tianshengImg
   }
 ];
 
