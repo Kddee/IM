@@ -400,7 +400,7 @@ const Nexus2026 = () => {
                     rel="noopener noreferrer"
                     className="w-full flex items-center justify-center rounded-xl bg-muted border border-border px-4 py-4 text-sm font-bold text-foreground hover:bg-muted/80 transition-all"
                   >
-                    Judge Registration
+                    Panel Member Registration
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </a>
                 </div>
