@@ -9,6 +9,8 @@ import joeImg from '@/assets/advisors/advisor-2.png';
 import ezinneImg from '@/assets/advisors/advisor-6.jpeg';
 import firasImg from '@/assets/advisors/Dr firas.jpeg';
 import katarzynaImg from '@/assets/advisors/katarzyna.png';
+import drLongjamImg from '@/assets/image.png';
+import profOlukemiImg from '@/assets/image copy.png';
 
 const expertsData = [
   {
@@ -111,6 +113,20 @@ const judgesData = [
     designation: "Candy Rainbow Creations",
     country: "South Africa",
     image: "https://static.wixstatic.com/media/502b14_3adc2682f9064817b4728eca9cd4a0b1~mv2.jpeg"
+  },
+  {
+    name: "Dr. Longjam Langamba Angom",
+    organisation: "IQ City Medical College Hospital",
+    designation: "Associate Professor & Lab Director",
+    country: "India",
+    image: drLongjamImg
+  },
+  {
+    name: "Prof. Olukemi Ajibike Aluko",
+    organisation: "Obafemi Awolowo University",
+    designation: "Professor",
+    country: "Nigeria",
+    image: profOlukemiImg
   }
 ];
 
