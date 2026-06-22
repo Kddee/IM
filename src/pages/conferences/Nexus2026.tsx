@@ -9,10 +9,11 @@ import joeImg from '@/assets/advisors/advisor-2.png';
 import ezinneImg from '@/assets/advisors/advisor-6.jpeg';
 import firasImg from '@/assets/advisors/Dr firas.jpeg';
 import katarzynaImg from '@/assets/advisors/katarzyna.png';
-import drLongjamImg from '@/assets/image.png';
 import profOlukemiImg from '@/assets/image copy.png';
-import emeraldImg from '@/assets/image copy 2.png';
+import emeraldImg from '@/assets/image copy 6.png';
 import drSaleemImg from '@/assets/image copy 3.png';
+import fatimahImg from '@/assets/image copy 4.png';
+import hassanImg from '@/assets/image copy 5.png';
 
 const expertsData = [
   {
@@ -117,13 +118,6 @@ const judgesData = [
     image: "https://static.wixstatic.com/media/502b14_3adc2682f9064817b4728eca9cd4a0b1~mv2.jpeg"
   },
   {
-    name: "Dr. Longjam Langamba Angom",
-    organisation: "IQ City Medical College Hospital",
-    designation: "Associate Professor & Lab Director",
-    country: "India",
-    image: drLongjamImg
-  },
-  {
     name: "Prof. Olukemi Ajibike Aluko",
     organisation: "Obafemi Awolowo University",
     designation: "Professor",
@@ -143,6 +137,20 @@ const judgesData = [
     designation: "Academic Advisor Head & Senior Lecturer",
     country: "Israel",
     image: drSaleemImg
+  },
+  {
+    name: "Fatimah Alneel",
+    organisation: "The University of Arizona",
+    designation: "PhD Higher Education",
+    country: "Saudi Arabia",
+    image: fatimahImg
+  },
+  {
+    name: "Hassan Mohammad Karimi",
+    organisation: "Amirkabir University of Technology",
+    designation: "Researcher",
+    country: "Iran",
+    image: hassanImg
   }
 ];
 
