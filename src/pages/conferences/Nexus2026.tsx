@@ -19,6 +19,9 @@ import sriharshaImg from '@/assets/image copy 8.png';
 import ankurImg from '@/assets/image copy 9.png';
 import pankajImg from '@/assets/image copy 10.png';
 import mrugendraImg from '@/assets/image copy 11.png';
+import nandanImg from '@/assets/image copy 12.png';
+import liyaqataliImg from '@/assets/image copy 13.png';
+import satishImg from '@/assets/image copy 14.png';
 
 const expertsData = [
   {
@@ -180,6 +183,24 @@ const judgesData = [
     designation: "Technical Architect",
     country: "USA",
     image: mrugendraImg
+  },
+  {
+    name: "Nandan Sharma",
+    designation: "Technology, Delivery & Innovation Leader",
+    country: "United States",
+    image: nandanImg
+  },
+  {
+    name: "Liyaqatali G Nadaf",
+    designation: "Distributed Computing & Scalable AI Systems Expert",
+    country: "San Francisco, USA",
+    image: liyaqataliImg
+  },
+  {
+    name: "Satish Kabade",
+    designation: "Product Technical Expert",
+    country: "New York, USA",
+    image: satishImg
   }
 ];
 
