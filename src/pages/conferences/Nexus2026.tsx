@@ -225,7 +225,7 @@ const hostsData = [
   {
     name: "Dr. Aida Mehrad",
     organisation: "C3S Business School",
-    designation: "Event Host",
+    designation: "Chairperson & Chief Program Moderator",
     country: "Spain",
     image: "https://static.wixstatic.com/media/502b14_2f32591e100346daa035a4aaf27ef7d7~mv2.jpeg"
   }
