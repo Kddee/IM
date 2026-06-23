@@ -22,6 +22,7 @@ import mrugendraImg from '@/assets/image copy 11.png';
 import nandanImg from '@/assets/image copy 12.png';
 import liyaqataliImg from '@/assets/image copy 13.png';
 import satishImg from '@/assets/image copy 14.png';
+import sushantImg from '@/assets/image copy 15.png';
 
 const expertsData = [
   {
@@ -201,6 +202,13 @@ const judgesData = [
     designation: "Product Technical Expert",
     country: "New York, USA",
     image: satishImg
+  },
+  {
+    name: "Dr. Sushant Kumar Dubey",
+    organisation: "Amity University, Patna",
+    designation: "Assistant Professor",
+    country: "India",
+    image: sushantImg
   }
 ];
 
