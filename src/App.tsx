@@ -72,7 +72,7 @@ const App = () => (
           <Route path="/events/wccc" element={<WCCC />} />
           <Route path="/events/icbt" element={<ICBT />} />
           <Route path="/events/idss" element={<IDSS />} />
-          <Route path="/events/hackathon-2026" element={<Nexus2026 />} />
+          <Route path="/events/nexus-2026" element={<Nexus2026 />} />
           <Route path="/events/fireside-chat-agi-ethics" element={<EthicsOfAGI />} />
           <Route path="/events/design-sprint-spatial-ux" element={<SpatialComputingUX />} />
           <Route path="/solutions" element={<Solutions />} />
