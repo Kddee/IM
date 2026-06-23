@@ -15,6 +15,10 @@ import drSaleemImg from '@/assets/image copy 3.png';
 import fatimahImg from '@/assets/image copy 4.png';
 import hassanImg from '@/assets/image copy 5.png';
 import truptiImg from '@/assets/image copy 7.png';
+import sriharshaImg from '@/assets/image copy 8.png';
+import ankurImg from '@/assets/image copy 9.png';
+import pankajImg from '@/assets/image copy 10.png';
+import mrugendraImg from '@/assets/image copy 11.png';
 
 const expertsData = [
   {
@@ -152,6 +156,30 @@ const judgesData = [
     designation: "Researcher",
     country: "Iran",
     image: hassanImg
+  },
+  {
+    name: "Sriharsha Anand Pushkala",
+    designation: "Director, Fraud Analytics and Strategy",
+    country: "United States",
+    image: sriharshaImg
+  },
+  {
+    name: "Ankur Jain",
+    designation: "Sr. Manager - Analytics",
+    country: "USA",
+    image: ankurImg
+  },
+  {
+    name: "Pankaj Arora",
+    designation: "Healthcare Supply Chain Leader",
+    country: "United States",
+    image: pankajImg
+  },
+  {
+    name: "Mrugendra Madalagi",
+    designation: "Technical Architect",
+    country: "USA",
+    image: mrugendraImg
   }
 ];
 
