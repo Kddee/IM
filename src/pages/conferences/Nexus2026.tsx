@@ -24,6 +24,7 @@ import liyaqataliImg from '@/assets/image copy 13.png';
 import satishImg from '@/assets/image copy 14.png';
 import sushantImg from '@/assets/image copy 15.png';
 import maniImg from '@/assets/image copy 16.png';
+import okopiImg from '@/assets/image copy 17.png';
 
 const expertsData = [
   {
@@ -210,6 +211,13 @@ const judgesData = [
     designation: "Assistant Professor",
     country: "India",
     image: sushantImg
+  },
+  {
+    name: "Okopi Fredrick",
+    organisation: "Unique UJ SERVICE LIMITES",
+    designation: "CEO",
+    country: "Nigeria",
+    image: okopiImg
   }
 ];
 
