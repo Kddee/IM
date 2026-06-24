@@ -23,6 +23,7 @@ import nandanImg from '@/assets/image copy 12.png';
 import liyaqataliImg from '@/assets/image copy 13.png';
 import satishImg from '@/assets/image copy 14.png';
 import sushantImg from '@/assets/image copy 15.png';
+import maniImg from '@/assets/image copy 16.png';
 
 const expertsData = [
   {
@@ -247,6 +248,13 @@ const directorsData = [
     designation: "Advisory Board Member",
     country: "Lebanon",
     image: firasImg
+  },
+  {
+    name: "Mani Tahriri",
+    organisation: "Mentor, Professor in Computer Engineering",
+    designation: "Director Technology",
+    country: "Spain",
+    image: maniImg
   }
 ];
 
