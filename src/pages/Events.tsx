@@ -22,7 +22,7 @@ const conferences: Conference[] = [
     title: "Nexus Industrial Summit 2026",
     shortDesc: "An Industrial Summit focusing on exciting projects on the combination of various domains like AI, Data Science, Cloud, Cybersecurity, and Machine Learning.",
     tag: "Industrial Summit",
-    date: "June 28, 2026 (Sunday)",
+    date: "June 28, 2026 (Sunday) • EDT / UTC",
     location: "Online",
     mode: "Virtual",
     icon: Code

@@ -15,16 +15,16 @@ import drSaleemImg from '@/assets/image copy 3.png';
 import fatimahImg from '@/assets/image copy 4.png';
 import hassanImg from '@/assets/image copy 5.png';
 import truptiImg from '@/assets/image copy 7.png';
-import sriharshaImg from '@/assets/image copy 8.png';
-import ankurImg from '@/assets/image copy 9.png';
 import pankajImg from '@/assets/image copy 10.png';
 import mrugendraImg from '@/assets/image copy 11.png';
 import nandanImg from '@/assets/image copy 12.png';
-import liyaqataliImg from '@/assets/image copy 13.png';
 import satishImg from '@/assets/image copy 14.png';
 import sushantImg from '@/assets/image copy 15.png';
 import maniImg from '@/assets/image copy 16.png';
 import okopiImg from '@/assets/image copy 17.png';
+import anshumanImg from '@/assets/image copy 18.png';
+import jitenderImg from '@/assets/image copy 19.png';
+import anujImg from '@/assets/image copy 20.png';
 
 const expertsData = [
   {
@@ -100,124 +100,157 @@ const judgesData = [
     organisation: "EyesNY",
     designation: "DBA / executive director",
     country: "USA",
-    image: "/images/judges/taleb.png"
+    image: "/images/judges/taleb.png",
+    bio: "Experienced executive director with a demonstrated history of working in database administration."
   },
   {
     name: "Tamar Makharoblidze",
     organisation: "School Of Arts and Sciences Ilai State University.",
     designation: "Professor",
     country: "Georgia",
-    image: "/images/judges/tamar.png"
-  },
-  {
-    name: "Marghescu Cristina-Florentina",
-    organisation: "University Politehnica of Bucharest (UPB)",
-    designation: "PhD Researcher in Mathematics",
-    country: "Romania",
-    image: "/images/judges/cristina.jpeg"
+    image: "/images/judges/tamar.png",
+    bio: "Professor specializing in advanced academic research and higher education."
   },
   {
     name: "Trupti Raikar",
     designation: "SAP Technology Architect",
     country: "USA",
-    image: truptiImg
+    image: truptiImg,
+    bio: "SAP Technology Architect providing strategic guidance for technology initiatives."
   },
   {
     name: "Ezinne Esther Arisa",
     designation: "Candy Rainbow Creations",
     country: "South Africa",
-    image: "https://static.wixstatic.com/media/502b14_3adc2682f9064817b4728eca9cd4a0b1~mv2.jpeg"
-  },
-  {
-    name: "Prof. Olukemi Ajibike Aluko",
-    organisation: "Obafemi Awolowo University",
-    designation: "Professor",
-    country: "Nigeria",
-    image: profOlukemiImg
-  },
-  {
-    name: "Emerald Abena Amponsah Baffour",
-    organisation: "G-Fash Networks",
-    designation: "CEO",
-    country: "Ghana",
-    image: emeraldImg
+    image: "https://static.wixstatic.com/media/502b14_3adc2682f9064817b4728eca9cd4a0b1~mv2.jpeg",
+    bio: "Creative leader and professional driving innovation in the South African region."
   },
   {
     name: "Dr. Saleem Abu Jaber",
     organisation: "Achva Academic College",
     designation: "Academic Advisor Head & Senior Lecturer",
     country: "Israel",
-    image: drSaleemImg
+    image: drSaleemImg,
+    bio: "Academic Advisor Head & Senior Lecturer focused on advancing academic methodologies."
   },
   {
     name: "Fatimah Alneel",
     organisation: "The University of Arizona",
     designation: "PhD Higher Education",
     country: "Saudi Arabia",
-    image: fatimahImg
-  },
-  {
-    name: "Hassan Mohammad Karimi",
-    organisation: "Amirkabir University of Technology",
-    designation: "Researcher",
-    country: "Iran",
-    image: hassanImg
-  },
-  {
-    name: "Sriharsha Anand Pushkala",
-    designation: "Director, Fraud Analytics and Strategy",
-    country: "United States",
-    image: sriharshaImg
-  },
-  {
-    name: "Ankur Jain",
-    designation: "Sr. Manager - Analytics",
-    country: "USA",
-    image: ankurImg
-  },
-  {
-    name: "Pankaj Arora",
-    designation: "Healthcare Supply Chain Leader",
-    country: "United States",
-    image: pankajImg
-  },
-  {
-    name: "Mrugendra Madalagi",
-    designation: "Technical Architect",
-    country: "USA",
-    image: mrugendraImg
-  },
-  {
-    name: "Nandan Sharma",
-    designation: "Technology, Delivery & Innovation Leader",
-    country: "United States",
-    image: nandanImg
-  },
-  {
-    name: "Liyaqatali G Nadaf",
-    designation: "Distributed Computing & Scalable AI Systems Expert",
-    country: "San Francisco, USA",
-    image: liyaqataliImg
-  },
-  {
-    name: "Satish Kabade",
-    designation: "Product Technical Expert",
-    country: "New York, USA",
-    image: satishImg
+    image: fatimahImg,
+    bio: "Higher Education professional committed to educational development."
   },
   {
     name: "Dr. Sushant Kumar Dubey",
     organisation: "Amity University, Patna",
     designation: "Assistant Professor",
     country: "India",
-    image: sushantImg
+    image: sushantImg,
+    bio: "Assistant Professor and researcher in modern technologies."
   },
   {
     name: "Okopi Fredrick",
     organisation: "Unique UJ SERVICE LIMITES",
     designation: "CEO",
     country: "Nigeria",
-    image: okopiImg
+    image: okopiImg,
+    bio: "CEO driving strategic business services in Nigeria."
+  },
+  {
+    name: "Emerald Abena Amponsah Baffour",
+    organisation: "G-Fash Networks",
+    designation: "CEO",
+    country: "Ghana",
+    image: emeraldImg,
+    bio: "CEO leading technological advancements and network solutions."
+  }
+];
+
+const technicalJudgesData = [
+  {
+    name: "Hassan Mohammad Karimi",
+    organisation: "Amirkabir University of Technology",
+    designation: "Researcher",
+    country: "Iran",
+    image: hassanImg,
+    bio: "Researcher specializing in technology and academic advancements."
+  },
+  {
+    name: "Anshuman Khandelwal",
+    designation: "Technical Review & Evaluation Judge",
+    image: anshumanImg,
+    bio: "Expert Technical Review & Evaluation Judge."
+  },
+  {
+    name: "Jitender Yadav",
+    designation: "Technical Review & Evaluation Judge",
+    image: jitenderImg,
+    bio: "Professional Technical Review & Evaluation Judge."
+  },
+  {
+    name: "Anuj Agrawal",
+    designation: "Technical Review & Evaluation Judge",
+    image: anujImg,
+    bio: "Dedicated Technical Review & Evaluation Judge."
+  },
+  {
+    name: "Marghescu Cristina-Florentina",
+    organisation: "University Politehnica of Bucharest (UPB)",
+    designation: "PhD Researcher in Mathematics",
+    country: "Romania",
+    image: "/images/judges/cristina.jpeg",
+    bio: "PhD Researcher in Mathematics."
+  },
+  {
+    name: "Pankaj Arora",
+    designation: "Healthcare Supply Chain Leader",
+    country: "United States",
+    image: pankajImg,
+    bio: "Leader in Healthcare Supply Chain optimizations."
+  },
+  {
+    name: "Mrugendra Madalagi",
+    designation: "Technical Architect",
+    country: "USA",
+    image: mrugendraImg,
+    bio: "Skilled Technical Architect in modern software design."
+  },
+  {
+    name: "Nandan Sharma",
+    designation: "Technology, Delivery & Innovation Leader",
+    country: "United States",
+    image: nandanImg,
+    bio: "Leader driving innovation and successful technology delivery."
+  },
+  {
+    name: "Satish Kabade",
+    designation: "Product Technical Expert",
+    country: "New York, USA",
+    image: satishImg,
+    bio: "Expert in technical product strategy and development."
+  }
+];
+
+const internationalDelegatesData = [
+  {
+    name: "Prof. Olukemi Ajibike Aluko",
+    organisation: "Obafemi Awolowo University",
+    designation: "Professor",
+    country: "Nigeria",
+    image: profOlukemiImg,
+    bio: "Professor involved in extensive academic and international research."
+  }
+];
+
+const chiefTechDirectorData = [
+  {
+    name: "Mani Tahriri",
+    organisation: "Mentor, Professor in Computer Engineering",
+    designation: "Director of Technology & Chief Technology Presenter",
+    country: "Spain",
+    image: maniImg,
+    bio: "Renowned mentor and Professor in Computer Engineering, leading technology strategies."
   }
 ];
 
@@ -227,42 +260,40 @@ const directorsData = [
     organisation: "Centre for Big Data & Machine Learning",
     designation: "Board Member",
     country: "USA",
-    image: zohaImg
+    image: zohaImg,
+    bio: "Expert in Big Data and Machine Learning."
   },
   {
     name: "Dr. Joe Perez",
     organisation: "NC Department of Health & Human Services",
     designation: "Head of Data Strategy",
     country: "Raleigh, NC, USA",
-    image: joeImg
+    image: joeImg,
+    bio: "Experienced data strategist and analytics leader."
   },
   {
     name: "Ezinne Esther Arisa",
     organisation: "Global Centre for Responsible Technology",
     designation: "Independent Director",
     country: "South Africa",
-    image: ezinneImg
+    image: ezinneImg,
+    bio: "Advocate for responsible and ethical technology adoption."
   },
   {
     name: "Dr. Katarzyna Antosz",
     organisation: "European Academy of Engineering Sciences",
     designation: "Board Member & Research Strategist",
     country: "Poland",
-    image: katarzynaImg
+    image: katarzynaImg,
+    bio: "Research strategist driving engineering advancements."
   },
   {
     name: "Dr. Firas Zeidan",
     organisation: "Institute for Technology & Human Progress",
     designation: "Advisory Board Member",
     country: "Lebanon",
-    image: firasImg
-  },
-  {
-    name: "Mani Tahriri",
-    organisation: "Mentor, Professor in Computer Engineering",
-    designation: "Director Technology",
-    country: "Spain",
-    image: maniImg
+    image: firasImg,
+    bio: "Advisor specializing in the intersection of technology and human progress."
   }
 ];
 
@@ -312,7 +343,7 @@ const Nexus2026 = () => {
             <div className="flex flex-wrap gap-4 justify-center">
               <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
                 <Calendar className="w-5 h-5 text-secondary mr-3" />
-                <span className="text-white font-medium">June 28, 2026 (Sunday)</span>
+                <span className="text-white font-medium">June 28, 2026 (Sunday) • EDT / UTC</span>
               </div>
               <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
                 <Video className="w-5 h-5 text-primary mr-3" />
@@ -404,13 +435,13 @@ const Nexus2026 = () => {
 
                 <div className="space-y-6 mt-8">
                   {[
-                    { time: "09:00 AM", title: "Opening Ceremony & Welcome Address", desc: "Welcome address and summit inauguration." },
-                    { time: "10:00 AM", title: "Global Keynote Session", desc: "Insights and visions from leading industry experts." },
-                    { time: "12:00 PM", title: "Expert Panel Discussions", desc: "Interactive debates on emerging technologies." },
-                    { time: "02:00 PM", title: "Research & Innovation Presentations", desc: "Showcasing groundbreaking research and innovation." },
-                    { time: "04:00 PM", title: "Industry Case Studies & Technology Insights", desc: "Real-world applications and technological advancements." },
-                    { time: "06:00 PM", title: "International Networking Session", desc: "Global connection and collaboration opportunities." },
-                    { time: "08:00 PM", title: "Awards, Recognition & Closing Ceremony", desc: "Honoring achievements and concluding the event." },
+                    { time: "09:00 AM EDT / 13:00 UTC", title: "Opening Ceremony & Welcome Address", desc: "Welcome address and summit inauguration." },
+                    { time: "10:00 AM EDT / 14:00 UTC", title: "Global Keynote Session", desc: "Insights and visions from leading industry experts." },
+                    { time: "12:00 PM EDT / 16:00 UTC", title: "Expert Panel Discussions", desc: "Interactive debates on emerging technologies." },
+                    { time: "02:00 PM EDT / 18:00 UTC", title: "Research & Innovation Presentations", desc: "Showcasing groundbreaking research and innovation." },
+                    { time: "04:00 PM EDT / 20:00 UTC", title: "Industry Case Studies & Technology Insights", desc: "Real-world applications and technological advancements." },
+                    { time: "06:00 PM EDT / 22:00 UTC", title: "International Networking Session", desc: "Global connection and collaboration opportunities." },
+                    { time: "08:00 PM EDT / 00:00 UTC", title: "Awards, Recognition & Closing Ceremony", desc: "Honoring achievements and concluding the event." },
                   ].map((item, index) => (
                     <div key={index} className="flex flex-col sm:flex-row sm:items-center bg-card p-4 rounded-2xl border border-border/50 shadow-sm hover:border-accent/50 transition-colors">
                       <div className="bg-accent/10 text-accent font-bold px-4 py-2 rounded-xl sm:w-40 text-center mb-4 sm:mb-0 sm:mr-6">
@@ -611,7 +642,7 @@ const Nexus2026 = () => {
             </div>
           </motion.div>
 
-          {/* Judges Section */}
+          {/* Judges Section (Panel Speakers) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -619,7 +650,7 @@ const Nexus2026 = () => {
           >
             <div className="flex items-center space-x-4 mb-10">
               <div className="w-12 h-1 bg-pink-500 rounded-full"></div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Panel Members</h2>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Panel Speakers</h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -637,12 +668,144 @@ const Nexus2026 = () => {
                     <p className="text-sm font-medium text-pink-500 mb-1">{judge.designation}</p>
                   )}
                   {judge.organisation && (
-                    <p className="text-sm text-muted-foreground mb-3 leading-relaxed flex-grow">{judge.organisation}</p>
+                    <p className="text-sm text-muted-foreground mb-2 leading-relaxed flex-grow">{judge.organisation}</p>
+                  )}
+                  {judge.bio && (
+                    <p className="text-xs text-muted-foreground italic mb-3 leading-relaxed">{judge.bio}</p>
                   )}
                   {judge.country && (
                     <div className="flex items-center justify-center text-sm font-medium text-pink-500/80 mt-auto w-full pt-3 border-t border-border/50">
                       <MapPin className="w-4 h-4 mr-1" />
                       {judge.country}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Technical Review & Evaluation Judges Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-16"
+          >
+            <div className="flex items-center space-x-4 mb-10">
+              <div className="w-12 h-1 bg-amber-500 rounded-full"></div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Technical Review & Evaluation Judges</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {technicalJudgesData.map((judge, index) => (
+                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-amber-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
+                  <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
+                    {judge.image ? (
+                      <img src={judge.image} alt={judge.name} className="w-full h-full object-cover object-top" />
+                    ) : (
+                      <User className="w-8 h-8 text-muted-foreground/50" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 text-foreground">{judge.name}</h3>
+                  {judge.designation && (
+                    <p className="text-sm font-medium text-amber-500 mb-1">{judge.designation}</p>
+                  )}
+                  {judge.organisation && (
+                    <p className="text-sm text-muted-foreground mb-2 leading-relaxed flex-grow">{judge.organisation}</p>
+                  )}
+                  {judge.bio && (
+                    <p className="text-xs text-muted-foreground italic mb-3 leading-relaxed">{judge.bio}</p>
+                  )}
+                  {judge.country && (
+                    <div className="flex items-center justify-center text-sm font-medium text-amber-500/80 mt-auto w-full pt-3 border-t border-border/50">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {judge.country}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Director of Technology & Chief Technology Presenter Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-16"
+          >
+            <div className="flex items-center space-x-4 mb-10">
+              <div className="w-12 h-1 bg-cyan-500 rounded-full"></div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Director of Technology & Chief Technology Presenter</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {chiefTechDirectorData.map((director, index) => (
+                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-cyan-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
+                  <div className="w-32 h-32 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
+                    {director.image ? (
+                      <img src={director.image} alt={director.name} className="w-full h-full object-cover object-[center_20%]" />
+                    ) : (
+                      <User className="w-8 h-8 text-muted-foreground/50" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 text-foreground">{director.name}</h3>
+                  {director.designation && (
+                    <p className="text-sm font-medium text-cyan-500 mb-1">{director.designation}</p>
+                  )}
+                  {director.organisation && (
+                    <p className="text-sm text-muted-foreground mb-2 leading-relaxed flex-grow">{director.organisation}</p>
+                  )}
+                  {director.bio && (
+                    <p className="text-xs text-muted-foreground italic mb-3 leading-relaxed">{director.bio}</p>
+                  )}
+                  {director.country && (
+                    <div className="flex items-center justify-center text-sm font-medium text-cyan-500/80 mt-auto w-full pt-3 border-t border-border/50">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {director.country}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* International Delegates Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-16"
+          >
+            <div className="flex items-center space-x-4 mb-10">
+              <div className="w-12 h-1 bg-indigo-500 rounded-full"></div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">International Delegates</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {internationalDelegatesData.map((delegate, index) => (
+                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-indigo-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
+                  <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
+                    {delegate.image ? (
+                      <img src={delegate.image} alt={delegate.name} className="w-full h-full object-cover object-top" />
+                    ) : (
+                      <User className="w-8 h-8 text-muted-foreground/50" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 text-foreground">{delegate.name}</h3>
+                  {delegate.designation && (
+                    <p className="text-sm font-medium text-indigo-500 mb-1">{delegate.designation}</p>
+                  )}
+                  {delegate.organisation && (
+                    <p className="text-sm text-muted-foreground mb-2 leading-relaxed flex-grow">{delegate.organisation}</p>
+                  )}
+                  {delegate.bio && (
+                    <p className="text-xs text-muted-foreground italic mb-3 leading-relaxed">{delegate.bio}</p>
+                  )}
+                  {delegate.country && (
+                    <div className="flex items-center justify-center text-sm font-medium text-indigo-500/80 mt-auto w-full pt-3 border-t border-border/50">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {delegate.country}
                     </div>
                   )}
                 </div>
