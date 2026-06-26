@@ -179,29 +179,6 @@ const judgesData = [
     country: "Nigeria",
     image: profOlukemiImg,
     bio: "Professor involved in extensive academic and international research."
-  }
-];
-
-const technicalJudgesData = [
-  {
-    name: "Hassan Mohammad Karimi",
-    organisation: "Amirkabir University of Technology",
-    designation: "Researcher",
-    country: "Iran",
-    image: hassanImg,
-    bio: "Researcher specializing in technology and academic advancements."
-  },
-  {
-    name: "Anshuman Khandelwal",
-    designation: "Technical Review & Evaluation Judge",
-    image: anshumanImg,
-    bio: "Expert Technical Review & Evaluation Judge."
-  },
-  {
-    name: "Jitender Yadav",
-    designation: "Technical Review & Evaluation Judge",
-    image: jitenderImg,
-    bio: "Professional Technical Review & Evaluation Judge."
   },
   {
     name: "Marghescu Cristina-Florentina",
@@ -238,6 +215,29 @@ const technicalJudgesData = [
     country: "New York, USA",
     image: satishImg,
     bio: "Expert in technical product strategy and development."
+  }
+];
+
+const technicalJudgesData = [
+  {
+    name: "Hassan Mohammad Karimi",
+    organisation: "Amirkabir University of Technology",
+    designation: "Researcher",
+    country: "Iran",
+    image: hassanImg,
+    bio: "Researcher specializing in technology and academic advancements."
+  },
+  {
+    name: "Anshuman Khandelwal",
+    designation: "Technical Review & Evaluation Judge",
+    image: anshumanImg,
+    bio: "Expert Technical Review & Evaluation Judge."
+  },
+  {
+    name: "Jitender Yadav",
+    designation: "Technical Review & Evaluation Judge",
+    image: jitenderImg,
+    bio: "Professional Technical Review & Evaluation Judge."
   }
 ];
 
