@@ -241,17 +241,6 @@ const technicalJudgesData = [
   }
 ];
 
-const internationalDelegatesData = [
-  {
-    name: "Prof. Olukemi Ajibike Aluko",
-    organisation: "Obafemi Awolowo University",
-    designation: "Professor",
-    country: "Nigeria",
-    image: profOlukemiImg,
-    bio: "Professor involved in extensive academic and international research."
-  }
-];
-
 const chiefTechDirectorData = [
   {
     name: "Mani Tahriri",
@@ -612,6 +601,49 @@ const Nexus2026 = () => {
             </div>
           </motion.div>
 
+          {/* Technical Review & Evaluation Judges Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-16"
+          >
+            <div className="flex items-center space-x-4 mb-10">
+              <div className="w-12 h-1 bg-amber-500 rounded-full"></div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Technical Review & Evaluation Judges</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {technicalJudgesData.map((judge, index) => (
+                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-amber-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
+                  <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
+                    {judge.image ? (
+                      <img src={judge.image} alt={judge.name} className="w-full h-full object-cover object-top" />
+                    ) : (
+                      <User className="w-8 h-8 text-muted-foreground/50" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 text-foreground">{judge.name}</h3>
+                  {judge.designation && (
+                    <p className="text-sm font-medium text-amber-500 mb-1">{judge.designation}</p>
+                  )}
+                  {judge.organisation && (
+                    <p className="text-sm text-muted-foreground mb-2 leading-relaxed flex-grow">{judge.organisation}</p>
+                  )}
+                  {judge.bio && (
+                    <p className="text-xs text-muted-foreground italic mb-3 leading-relaxed">{judge.bio}</p>
+                  )}
+                  {judge.country && (
+                    <div className="flex items-center justify-center text-sm font-medium text-amber-500/80 mt-auto w-full pt-3 border-t border-border/50">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {judge.country}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
           {/* Event Host Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -736,91 +768,7 @@ const Nexus2026 = () => {
             </div>
           </motion.div>
 
-          {/* Technical Review & Evaluation Judges Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-16"
-          >
-            <div className="flex items-center space-x-4 mb-10">
-              <div className="w-12 h-1 bg-amber-500 rounded-full"></div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Technical Review & Evaluation Judges</h2>
-            </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {technicalJudgesData.map((judge, index) => (
-                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-amber-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
-                  <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
-                    {judge.image ? (
-                      <img src={judge.image} alt={judge.name} className="w-full h-full object-cover object-top" />
-                    ) : (
-                      <User className="w-8 h-8 text-muted-foreground/50" />
-                    )}
-                  </div>
-                  <h3 className="text-lg font-bold mb-2 text-foreground">{judge.name}</h3>
-                  {judge.designation && (
-                    <p className="text-sm font-medium text-amber-500 mb-1">{judge.designation}</p>
-                  )}
-                  {judge.organisation && (
-                    <p className="text-sm text-muted-foreground mb-2 leading-relaxed flex-grow">{judge.organisation}</p>
-                  )}
-                  {judge.bio && (
-                    <p className="text-xs text-muted-foreground italic mb-3 leading-relaxed">{judge.bio}</p>
-                  )}
-                  {judge.country && (
-                    <div className="flex items-center justify-center text-sm font-medium text-amber-500/80 mt-auto w-full pt-3 border-t border-border/50">
-                      <MapPin className="w-4 h-4 mr-1" />
-                      {judge.country}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* International Delegates Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-16"
-          >
-            <div className="flex items-center space-x-4 mb-10">
-              <div className="w-12 h-1 bg-indigo-500 rounded-full"></div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">International Delegates</h2>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {internationalDelegatesData.map((delegate, index) => (
-                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-indigo-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
-                  <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
-                    {delegate.image ? (
-                      <img src={delegate.image} alt={delegate.name} className="w-full h-full object-cover object-top" />
-                    ) : (
-                      <User className="w-8 h-8 text-muted-foreground/50" />
-                    )}
-                  </div>
-                  <h3 className="text-lg font-bold mb-2 text-foreground">{delegate.name}</h3>
-                  {delegate.designation && (
-                    <p className="text-sm font-medium text-indigo-500 mb-1">{delegate.designation}</p>
-                  )}
-                  {delegate.organisation && (
-                    <p className="text-sm text-muted-foreground mb-2 leading-relaxed flex-grow">{delegate.organisation}</p>
-                  )}
-                  {delegate.bio && (
-                    <p className="text-xs text-muted-foreground italic mb-3 leading-relaxed">{delegate.bio}</p>
-                  )}
-                  {delegate.country && (
-                    <div className="flex items-center justify-center text-sm font-medium text-indigo-500/80 mt-auto w-full pt-3 border-t border-border/50">
-                      <MapPin className="w-4 h-4 mr-1" />
-                      {delegate.country}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </motion.div>
 
           {/* Experts Section */}
           <motion.div
