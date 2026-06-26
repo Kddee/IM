@@ -24,6 +24,7 @@ import maniImg from '@/assets/image copy 16.png';
 import okopiImg from '@/assets/image copy 17.png';
 import anshumanImg from '@/assets/image copy 18.png';
 import jitenderImg from '@/assets/image copy 19.png';
+import anujImg from '@/assets/image copy 20.png';
 import shamalImg from '@/assets/image copy 21.png';
 
 const expertsData = [
@@ -215,6 +216,12 @@ const judgesData = [
     country: "New York, USA",
     image: satishImg,
     bio: "Expert in technical product strategy and development."
+  },
+  {
+    name: "Anuj Agrawal",
+    designation: "Technical Review & Evaluation Judge",
+    image: anujImg,
+    bio: "Dedicated Technical Review & Evaluation Judge."
   }
 ];
 
