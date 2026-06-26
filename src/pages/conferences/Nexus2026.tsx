@@ -216,12 +216,6 @@ const judgesData = [
     country: "New York, USA",
     image: satishImg,
     bio: "Expert in technical product strategy and development."
-  },
-  {
-    name: "Anuj Agrawal",
-    designation: "Technical Review & Evaluation Judge",
-    image: anujImg,
-    bio: "Dedicated Technical Review & Evaluation Judge."
   }
 ];
 
@@ -245,6 +239,12 @@ const technicalJudgesData = [
     designation: "Technical Review & Evaluation Judge",
     image: jitenderImg,
     bio: "Professional Technical Review & Evaluation Judge."
+  },
+  {
+    name: "Anuj Agrawal",
+    designation: "Technical Review & Evaluation Judge",
+    image: anujImg,
+    bio: "Dedicated Technical Review & Evaluation Judge."
   }
 ];
 
