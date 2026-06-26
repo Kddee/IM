@@ -25,6 +25,8 @@ import okopiImg from '@/assets/image copy 17.png';
 import anshumanImg from '@/assets/image copy 18.png';
 import jitenderImg from '@/assets/image copy 19.png';
 import shamalImg from '@/assets/image copy 21.png';
+import veeramaniImg from '@/assets/image copy 22.png';
+import navinImg from '@/assets/image copy 23.png';
 
 const expertsData = [
   {
@@ -215,6 +217,20 @@ const judgesData = [
     country: "New York, USA",
     image: satishImg,
     bio: "Expert in technical product strategy and development."
+  },
+  {
+    name: "Veeramani Sampathkumar",
+    designation: "Fintech Technology Leader",
+    country: "USA",
+    image: veeramaniImg,
+    bio: "Fintech Technology Leader."
+  },
+  {
+    name: "Navin Kumar Chhibber",
+    designation: "AI/ML, GenAI and Data Platforms Leader, Product Engineering and Digital Transformation Expert, USA",
+    country: "USA",
+    image: navinImg,
+    bio: "AI/ML, GenAI and Data Platforms Leader, Product Engineering and Digital Transformation Expert."
   }
 ];
 
