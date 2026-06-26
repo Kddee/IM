@@ -24,7 +24,7 @@ import maniImg from '@/assets/image copy 16.png';
 import okopiImg from '@/assets/image copy 17.png';
 import anshumanImg from '@/assets/image copy 18.png';
 import jitenderImg from '@/assets/image copy 19.png';
-import anujImg from '@/assets/image copy 20.png';
+import shamalImg from '@/assets/image copy 21.png';
 
 const expertsData = [
   {
@@ -164,6 +164,21 @@ const judgesData = [
     country: "Ghana",
     image: emeraldImg,
     bio: "CEO leading technological advancements and network solutions."
+  },
+  {
+    name: "Shamal Chandrakant Bhole",
+    designation: "Technical Leader, Crypto Risk & Compliance Infrastructure",
+    country: "USA",
+    image: shamalImg,
+    bio: "Technical Leader specializing in Crypto Risk and Compliance Infrastructure."
+  },
+  {
+    name: "Prof. Olukemi Ajibike Aluko",
+    organisation: "Obafemi Awolowo University",
+    designation: "Professor",
+    country: "Nigeria",
+    image: profOlukemiImg,
+    bio: "Professor involved in extensive academic and international research."
   }
 ];
 
@@ -187,12 +202,6 @@ const technicalJudgesData = [
     designation: "Technical Review & Evaluation Judge",
     image: jitenderImg,
     bio: "Professional Technical Review & Evaluation Judge."
-  },
-  {
-    name: "Anuj Agrawal",
-    designation: "Technical Review & Evaluation Judge",
-    image: anujImg,
-    bio: "Dedicated Technical Review & Evaluation Judge."
   },
   {
     name: "Marghescu Cristina-Florentina",
@@ -614,9 +623,9 @@ const Nexus2026 = () => {
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Event Host</h2>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex justify-center">
               {hostsData.map((host, index) => (
-                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-teal-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
+                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-teal-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full max-w-sm w-full">
                   <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
                     {host.image ? (
                       <img src={host.image} alt={host.name} className="w-full h-full object-cover" />
@@ -635,6 +644,49 @@ const Nexus2026 = () => {
                     <div className="flex items-center justify-center text-sm font-medium text-teal-500/80 mt-auto w-full pt-3 border-t border-border/50">
                       <MapPin className="w-4 h-4 mr-1" />
                       {host.country}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Director of Technology & Chief Technology Presenter Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-16"
+          >
+            <div className="flex items-center space-x-4 mb-10">
+              <div className="w-12 h-1 bg-cyan-500 rounded-full"></div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Director of Technology & Chief Technology Presenter</h2>
+            </div>
+
+            <div className="flex justify-center">
+              {chiefTechDirectorData.map((director, index) => (
+                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-cyan-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full max-w-sm w-full">
+                  <div className="w-32 h-32 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
+                    {director.image ? (
+                      <img src={director.image} alt={director.name} className="w-full h-full object-cover object-[center_20%]" />
+                    ) : (
+                      <User className="w-8 h-8 text-muted-foreground/50" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 text-foreground">{director.name}</h3>
+                  {director.designation && (
+                    <p className="text-sm font-medium text-cyan-500 mb-1">{director.designation}</p>
+                  )}
+                  {director.organisation && (
+                    <p className="text-sm text-muted-foreground mb-2 leading-relaxed flex-grow">{director.organisation}</p>
+                  )}
+                  {director.bio && (
+                    <p className="text-xs text-muted-foreground italic mb-3 leading-relaxed">{director.bio}</p>
+                  )}
+                  {director.country && (
+                    <div className="flex items-center justify-center text-sm font-medium text-cyan-500/80 mt-auto w-full pt-3 border-t border-border/50">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {director.country}
                     </div>
                   )}
                 </div>
@@ -720,49 +772,6 @@ const Nexus2026 = () => {
                     <div className="flex items-center justify-center text-sm font-medium text-amber-500/80 mt-auto w-full pt-3 border-t border-border/50">
                       <MapPin className="w-4 h-4 mr-1" />
                       {judge.country}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Director of Technology & Chief Technology Presenter Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-16"
-          >
-            <div className="flex items-center space-x-4 mb-10">
-              <div className="w-12 h-1 bg-cyan-500 rounded-full"></div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Director of Technology & Chief Technology Presenter</h2>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {chiefTechDirectorData.map((director, index) => (
-                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-cyan-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
-                  <div className="w-32 h-32 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
-                    {director.image ? (
-                      <img src={director.image} alt={director.name} className="w-full h-full object-cover object-[center_20%]" />
-                    ) : (
-                      <User className="w-8 h-8 text-muted-foreground/50" />
-                    )}
-                  </div>
-                  <h3 className="text-lg font-bold mb-2 text-foreground">{director.name}</h3>
-                  {director.designation && (
-                    <p className="text-sm font-medium text-cyan-500 mb-1">{director.designation}</p>
-                  )}
-                  {director.organisation && (
-                    <p className="text-sm text-muted-foreground mb-2 leading-relaxed flex-grow">{director.organisation}</p>
-                  )}
-                  {director.bio && (
-                    <p className="text-xs text-muted-foreground italic mb-3 leading-relaxed">{director.bio}</p>
-                  )}
-                  {director.country && (
-                    <div className="flex items-center justify-center text-sm font-medium text-cyan-500/80 mt-auto w-full pt-3 border-t border-border/50">
-                      <MapPin className="w-4 h-4 mr-1" />
-                      {director.country}
                     </div>
                   )}
                 </div>
