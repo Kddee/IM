@@ -27,6 +27,9 @@ import jitenderImg from '@/assets/image copy 19.png';
 import shamalImg from '@/assets/image copy 21.png';
 import veeramaniImg from '@/assets/image copy 22.png';
 import navinImg from '@/assets/image copy 23.png';
+import profAlexanderImg from '@/assets/image copy 24.png';
+import profElNamakiImg from '@/assets/image copy 25.png';
+import drShamilaImg from '@/assets/image copy 26.png';
 
 const expertsData = [
   {
@@ -224,6 +227,30 @@ const judgesData = [
     country: "USA",
     image: navinImg,
     bio: "AI/ML, GenAI and Data Platforms Leader, Product Engineering and Digital Transformation Expert."
+  },
+  {
+    name: "Prof. Dr. Alexander Bull",
+    organisation: "DGUV University of Applied Sciences",
+    designation: "Professor",
+    country: "Germany",
+    image: profAlexanderImg,
+    bio: "Professor at DGUV University of Applied Sciences."
+  },
+  {
+    name: "Prof. Dr. M.S.S. EI Namaki",
+    organisation: "Artificial Intelligence technologies (AIT) / Maastricht School of Management",
+    designation: "Dean / Retired Dean",
+    country: "Canada / Netherlands",
+    image: profElNamakiImg,
+    bio: "Retired Dean, Maastricht School of Management, Netherlands. Dean, Artificial Intelligence technologies (AIT), Canada."
+  },
+  {
+    name: "Dr. Shamila Ahmed Hashi",
+    organisation: "Al-Huda School",
+    designation: "Computer & Network Security Fundamentals Instructor",
+    country: "USA",
+    image: drShamilaImg,
+    bio: "Computer & Network Security Fundamentals Instructor at Al-Huda School, College Park, MD, USA."
   }
 ];
 
