@@ -30,6 +30,7 @@ import navinImg from '@/assets/image copy 23.png';
 import profAlexanderImg from '@/assets/image copy 24.png';
 import profElNamakiImg from '@/assets/image copy 25.png';
 import drShamilaImg from '@/assets/image copy 26.png';
+import amberImg from '@/assets/image copy 27.png';
 
 const expertsData = [
   {
@@ -208,13 +209,6 @@ const judgesData = [
     bio: "Skilled Technical Architect in modern software design."
   },
   {
-    name: "Nandan Sharma",
-    designation: "Technology, Delivery & Innovation Leader",
-    country: "United States",
-    image: nandanImg,
-    bio: "Leader driving innovation and successful technology delivery."
-  },
-  {
     name: "Satish Kabade",
     designation: "Product Technical Expert",
     country: "New York, USA",
@@ -251,10 +245,24 @@ const judgesData = [
     country: "USA",
     image: drShamilaImg,
     bio: "Computer & Network Security Fundamentals Instructor at Al-Huda School, College Park, MD, USA."
+  },
+  {
+    name: "Mr. Amber Rastogi",
+    designation: "Distributed Systems & Cloud Computing",
+    country: "USA",
+    image: amberImg,
+    bio: "Distributed Systems & Cloud Computing expert."
   }
 ];
 
 const technicalJudgesData = [
+  {
+    name: "Nandan Sharma",
+    designation: "Technology, Delivery & Innovation Leader",
+    country: "United States",
+    image: nandanImg,
+    bio: "Leader driving innovation and successful technology delivery."
+  },
   {
     name: "Hassan Mohammad Karimi",
     organisation: "Amirkabir University of Technology",
