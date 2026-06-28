@@ -786,9 +786,7 @@ const Nexus2026 = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {judgesData.map((judge, index) => (
                 <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-pink-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full relative">
-                  <div className="absolute top-4 right-4 bg-pink-500/10 text-pink-500 px-2 py-1 rounded text-xs font-bold border border-pink-500/20">
-                    Judge
-                  </div>
+
                   <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm mt-2">
                     {judge.image ? (
                       <img src={judge.image} alt={judge.name} className="w-full h-full object-cover object-top" />
