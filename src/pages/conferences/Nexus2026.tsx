@@ -32,6 +32,10 @@ import profElNamakiImg from '@/assets/image copy 25.png';
 import drShamilaImg from '@/assets/image copy 26.png';
 import amberImg from '@/assets/image copy 27.png';
 
+// Dynamically load all images added today for the glimpses section
+const glimpsesGlob = import.meta.glob('@/assets/WhatsApp Image 2026-06-29*.jpeg', { eager: true });
+const glimpseImages = Object.values(glimpsesGlob).map((module: any) => module.default);
+
 const expertsData = [
   {
     "name": "Andreza Malena Guedes da Costa Silva",
@@ -545,7 +549,7 @@ const Nexus2026 = () => {
 
             </div>
 
-            {/* Sidebar Registration */}
+            {/* Sidebar Registration / Status */}
             <div className="space-y-8">
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
@@ -554,40 +558,22 @@ const Nexus2026 = () => {
                 className="bg-card p-8 rounded-3xl border border-border shadow-2xl sticky top-32"
               >
                 <div className="flex items-center justify-between mb-6">
-                  <h3 className="font-display text-2xl font-bold text-foreground">Registration</h3>
-                  <div className="bg-green-500/10 text-green-500 px-3 py-1 rounded-full text-xs font-bold animate-pulse">
-                    Open Now
+                  <h3 className="font-display text-2xl font-bold text-foreground">Status</h3>
+                  <div className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-bold">
+                    Event Concluded
                   </div>
                 </div>
 
                 <p className="text-sm text-muted-foreground mb-6">
-                  Ready to innovate? Join Nexus Industrial Summit 2026. Choose your role below to complete your registration.
+                  The Nexus Industrial Summit 2026 has successfully concluded. Thank you to all our speakers, participants, and partners for making it a massive success!
                 </p>
 
                 <div className="space-y-4 mb-8">
                   <a
-                    href="https://forms.gle/ZYx7Hvx5dirdZqa16"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#glimpses"
                     className="w-full flex items-center justify-center rounded-xl bg-gradient-to-r from-secondary to-accent px-4 py-4 text-sm font-bold text-white shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all"
                   >
-                    Participant Registration
-                    <ExternalLink className="ml-2 w-4 h-4" />
-                  </a>
-
-                  <div className="relative flex items-center py-2">
-                    <div className="flex-grow border-t border-border"></div>
-                    <span className="flex-shrink-0 mx-4 text-muted-foreground text-xs uppercase font-medium">Or</span>
-                    <div className="flex-grow border-t border-border"></div>
-                  </div>
-
-                  <a
-                    href="https://forms.gle/A7HTtihp7mNXRG9y8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full flex items-center justify-center rounded-xl bg-muted border border-border px-4 py-4 text-sm font-bold text-foreground hover:bg-muted/80 transition-all"
-                  >
-                    Panel Member Registration
+                    View Event Highlights
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </a>
                 </div>
@@ -595,19 +581,9 @@ const Nexus2026 = () => {
                 <div className="bg-background/50 rounded-xl p-4 border border-border/50">
                   <div className="flex items-center text-sm font-medium mb-2">
                     <Calendar className="w-4 h-4 mr-2 text-primary" />
-                    Deadline
+                    Event Date
                   </div>
-                  <p className="text-xs text-muted-foreground">Registration closes on June 26, 2026.</p>
-                </div>
-
-                <div className="bg-background/50 rounded-xl p-4 border border-border/50 mt-4">
-                  <div className="flex items-center text-sm font-medium mb-2">
-                    <Shield className="w-4 h-4 mr-2 text-emerald-500" />
-                    IP & Presentation Policy
-                  </div>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Participants retain full ownership and intellectual property rights of their research and presentations. Submitted materials may be used or shared by InnovoraMind LLC solely for promotional and showcase purposes related to the summit.
-                  </p>
+                  <p className="text-xs text-muted-foreground">Held on June 28, 2026</p>
                 </div>
               </motion.div>
             </div>
@@ -941,6 +917,68 @@ const Nexus2026 = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </motion.div>
+
+          {/* Event Glimpses / Highlights Section */}
+          <motion.div
+            id="glimpses"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-24 pt-10 border-t border-border/50"
+          >
+            <div className="flex flex-col items-center text-center space-y-4 mb-12">
+              <div className="inline-flex items-center rounded-full border border-secondary/50 bg-secondary/10 px-4 py-1.5 text-sm font-semibold text-secondary">
+                <Video className="w-4 h-4 mr-2" />
+                Event Highlights
+              </div>
+              <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">Glimpses of Nexus 2026</h2>
+              <p className="text-muted-foreground max-w-2xl text-lg">
+                Relive the incredible moments, insightful presentations, and expert discussions from our virtual summit.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4 md:px-8">
+              {glimpseImages.length > 0 ? (
+                glimpseImages.map((imgSrc, index) => (
+                  <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.5, delay: (index % 8) * 0.1 }}
+                    key={index}
+                    className="group"
+                  >
+                    <div className="relative bg-card rounded-2xl border border-border/50 shadow-md hover:shadow-2xl hover:border-primary/50 hover:shadow-primary/10 overflow-hidden transition-all duration-500 hover:-translate-y-2">
+                      {/* Browser Frame Header */}
+                      <div className="bg-muted/50 px-4 py-2.5 flex items-center gap-2 border-b border-border/50">
+                        <div className="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+                        <div className="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
+                        <div className="ml-3 text-[10px] text-muted-foreground font-mono bg-background/50 px-2 py-0.5 rounded border border-border/30 flex-grow text-center truncate opacity-70">
+                          nexus-2026-img-{index + 1}
+                        </div>
+                      </div>
+                      
+                      {/* Image Container with CSS Scaling to hide taskbars */}
+                      <div className="relative aspect-[16/10] bg-muted overflow-hidden">
+                        <img 
+                          src={imgSrc} 
+                          alt={`Nexus 2026 Glimpse ${index + 1}`} 
+                          className="w-full h-full object-cover object-top origin-top scale-[1.08] group-hover:scale-[1.12] transition-transform duration-700 ease-out"
+                        />
+                        {/* Subtle inner shadow for depth */}
+                        <div className="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.1)] pointer-events-none"></div>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))
+              ) : (
+                <div className="col-span-full text-center py-12 text-muted-foreground">
+                  Loading images or no images found for this date.
+                </div>
+              )}
             </div>
           </motion.div>
 
