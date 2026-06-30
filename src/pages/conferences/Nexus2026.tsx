@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Layout } from '@/components/layout/Layout';
 import {
-  Calendar, MapPin, Video, Code, Shield, Cloud, Component, CheckCircle2, Trophy, Crosshair, ClipboardList, Target, Award, ExternalLink, Users, User
+  Calendar, MapPin, Video, Code, Shield, Cloud, Component, CheckCircle2, Trophy, Crosshair, ClipboardList, Target, Award, ExternalLink, Users, User, PlayCircle
 } from 'lucide-react';
 
 import zohaImg from '@/assets/advisors/ZR.jpeg';
@@ -35,6 +35,21 @@ import amberImg from '@/assets/image copy 27.png';
 // Dynamically load all images added today for the glimpses section
 const glimpsesGlob = import.meta.glob('@/assets/WhatsApp Image 2026-06-29*.jpeg', { eager: true });
 const glimpseImages = Object.values(glimpsesGlob).map((module: any) => module.default);
+
+const videoGlimpseData = [
+  { id: "1i9Hmf7FRweQbqphm7M1JADgt3Ebzv00S", name: "Dr. Shamila Ahmed Hashi" },
+  { id: "1NJ37wXH300hUeMiD6SyP979IsPoGbiMq", name: "Mr. Amber Rastogi" },
+  { id: "1936wX8fLNSHXuq3uMy1gP71EqR_APiQP", name: "Mrugendra Madalagi" },
+  { id: "1BroEaDU2dj07oXPaaRJIvQRIweWqC0qH", name: "Prof. Dr. M.S.S. EI Namaki" },
+  { id: "1wDD8dJ6GDHenbT_q6jx0LLV4f8VcwWt7", name: "Navin Kumar Chhibber" },
+  { id: "1hAfoImPZANgxe-PeOGmZOVstiDtSkjE9", name: "Pankaj Arora" },
+  { id: "1CAWKdjoxfPl7Fpijp2bRZZ4BcHAtUNGk", name: "Shamal Chandrakant Bhole" },
+  { id: "1-aOdITfEFAebx7ZRCR1ex5a9ea9PwvSz", name: "Sri Harsha Anand Pushkala" },
+  { id: "1hI31X1_3HetDw_l9Xlh3Jc9wp53rRNDn", name: "Trupti Raikar" },
+  { id: "1VsbvsTLgidte1C2CJyXpquVGcm29zYwM", name: "Mani Tahriri" },
+  { id: "1_YsvGaY5h68KOUg45ACcnKStRNrP_Nfq", name: "Prof. Dr. Alexander Bull" },
+  { id: "10AXHWxYZPR3saFeVYZGmNj_FJsvzQwWo", name: "Fatimah Alneel" }
+];
 
 const expertsData = [
   {
@@ -979,6 +994,66 @@ const Nexus2026 = () => {
                   Loading images or no images found for this date.
                 </div>
               )}
+            </div>
+          </motion.div>
+
+          {/* Video Glimpses / Highlights Section */}
+          <motion.div
+            id="video-glimpses"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-16 pt-10 border-t border-border/50"
+          >
+            <div className="flex flex-col items-center text-center space-y-4 mb-12">
+              <div className="inline-flex items-center rounded-full border border-secondary/50 bg-secondary/10 px-4 py-1.5 text-sm font-semibold text-secondary">
+                <Video className="w-4 h-4 mr-2" />
+                Video Highlights
+              </div>
+              <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">Video Glimpses of Nexus 2026</h2>
+              <p className="text-muted-foreground max-w-2xl text-lg">
+                Watch some of the best moments and insightful talks from the virtual summit.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8">
+              {videoGlimpseData.map((video, index) => (
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.5, delay: (index % 6) * 0.1 }}
+                  key={index}
+                  className="group"
+                >
+                  <div className="relative bg-card rounded-2xl border border-border/50 shadow-md hover:shadow-2xl hover:border-primary/50 overflow-hidden transition-all duration-500 hover:-translate-y-2 flex flex-col">
+                    {/* Browser Frame Header */}
+                    <div className="bg-muted/50 px-4 py-2.5 flex items-center gap-2 border-b border-border/50">
+                      <div className="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+                      <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+                      <div className="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
+                      <div className="ml-3 text-[10px] text-muted-foreground font-mono bg-background/50 px-2 py-0.5 rounded border border-border/30 flex-grow text-center truncate opacity-70">
+                        nexus-2026-video-{index + 1}
+                      </div>
+                    </div>
+                    
+                    {/* Video Container */}
+                    <div className="relative aspect-video bg-muted overflow-hidden w-full">
+                      <iframe
+                        src={`https://drive.google.com/file/d/${video.id}/preview`}
+                        className="w-full h-full border-0"
+                        allow="autoplay; fullscreen"
+                        title={video.name}
+                      ></iframe>
+                    </div>
+
+                    {/* Speaker Info */}
+                    <div className="p-4 bg-card border-t border-border/50 mt-auto">
+                      <h3 className="font-bold text-foreground text-center">{video.name}</h3>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
 
